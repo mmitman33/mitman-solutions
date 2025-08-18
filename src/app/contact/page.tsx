@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -310,7 +309,7 @@ This message was sent from the Mitman Solutions contact form.`);
               <CardContent>
                 <p className="text-muted-foreground">
                   Absolutely! I have experience working with businesses of all sizes. 
-                  I'll gladly level-set my approach to match your budget, growth stage, and business needs.
+                  I&apos;ll gladly level-set my approach to match your budget, growth stage, and business needs.
                 </p>
               </CardContent>
             </Card>
