@@ -13,7 +13,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-balance">
-                <span className="gradient-text">Modernize</span> Your Business
+                <span className="text-primary font-extrabold">Modernize</span> Your Business
                 <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 text-foreground">
                   with Smart Technology
                 </span>
@@ -32,16 +32,17 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-        <Image
+              <div className="relative animate-fade-in">
+                <Image
                   src="/images/mitman-solutions-transparent.png"
                   alt="Mitman Solutions"
-                  width={400}
-                  height={400}
-                  className="object-contain drop-shadow-2xl animate-float w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"
-          priority
-        />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl -z-10"></div>
+                  width={600}
+                  height={600}
+                  className="object-contain drop-shadow-2xl animate-float w-96 h-96 sm:w-[400px] sm:h-[400px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px]"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent rounded-full blur-2xl -z-10"></div>
               </div>
             </div>
           </div>

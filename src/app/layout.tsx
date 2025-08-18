@@ -18,8 +18,11 @@ export const metadata: Metadata = {
   title: "Mitman Solutions - Modernize Your Tech Stack",
   description: "Transform your business with enterprise-grade software solutions. E-commerce, AI integration, and modern web applications that drive growth.",
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/favicon-32.png',
   },
 };
 
