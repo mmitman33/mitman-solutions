@@ -10,11 +10,11 @@ export function Navigation() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/mitman-solutions.jpg"
+            src="/images/mitman-solutions-transparent.png"
             alt="Mitman Solutions Logo"
-            width={40}
-            height={40}
-            className="rounded-md"
+            width={45}
+            height={45}
+            className="object-contain"
           />
           <span className="font-bold text-xl">Mitman Solutions</span>
         </Link>
