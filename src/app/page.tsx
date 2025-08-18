@@ -33,14 +33,14 @@ export default function Home() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <Image
+        <Image
                   src="/images/mitman-solutions-transparent.png"
                   alt="Mitman Solutions"
                   width={400}
                   height={400}
                   className="object-contain drop-shadow-2xl animate-float w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"
-                  priority
-                />
+          priority
+        />
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl -z-10"></div>
               </div>
             </div>
