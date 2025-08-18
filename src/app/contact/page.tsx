@@ -28,7 +28,7 @@ ${formData.message}
 ---
 This message was sent from the Mitman Solutions contact form.`);
     
-    const mailtoLink = `mailto:mmitman33@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:mitman.solutions@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
   };
 
@@ -175,8 +175,8 @@ This message was sent from the Mitman Solutions contact form.`);
                   </CardHeader>
                   <CardContent>
                     <Button variant="outline" className="w-full" asChild>
-                      <a href="mailto:mmitman33@gmail.com">
-                        mmitman33@gmail.com
+                      <a href="mailto:mitman.solutions@gmail.com">
+                        mitman.solutions@gmail.com
                       </a>
                     </Button>
                   </CardContent>
@@ -354,7 +354,7 @@ This message was sent from the Mitman Solutions contact form.`);
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
-                <a href="mailto:mmitman33@gmail.com">Send Email</a>
+                <a href="mailto:mitman.solutions@gmail.com">Send Email</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="tel:414-526-6926">Call Now</a>
