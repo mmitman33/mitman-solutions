@@ -14,7 +14,7 @@ export default function Services() {
               <span className="text-primary block">for Modern Businesses</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              From startups to Fortune 500 companies, I deliver scalable software solutions 
+              No matter your size, I deliver scalable software solutions 
               that drive growth, improve efficiency, and create competitive advantages.
             </p>
             <Button size="lg" asChild>

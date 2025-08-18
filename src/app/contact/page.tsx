@@ -47,11 +47,11 @@ This message was sent from the Mitman Solutions contact form.`);
           <div className="max-w-4xl mx-auto space-y-6">
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
               Let&apos;s Build Something
-              <span className="text-primary block">Amazing Together</span>
+              <span className="text-primary block">Amazing</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Ready to accelerate your business with cutting-edge technology? 
-              Let&apos;s discuss your project and explore how we can drive your success.
+              Ready to accelerate your business? 
+              Let&apos;s discuss your needs and build a plan to drive your success.
             </p>
           </div>
         </div>
@@ -309,8 +309,8 @@ This message was sent from the Mitman Solutions contact form.`);
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Absolutely! I work with businesses of all sizes, from early-stage startups to Fortune 500 companies. 
-                  I can scale my services and approach to match your budget and growth stage.
+                  Absolutely! I have experience working with businesses of all sizes. 
+                  I'll gladly level-set my approach to match your budget, growth stage, and business needs.
                 </p>
               </CardContent>
             </Card>
@@ -321,8 +321,8 @@ This message was sent from the Mitman Solutions contact form.`);
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  I specialize in modern web technologies (React, Next.js, Node.js), cloud platforms (AWS), 
-                  AI integration, and e-commerce solutions. My AWS experience ensures enterprise-grade scalability.
+                  I specialize in modern web technologies (React, Next.js, Node.js) and cloud platforms (AWS), 
+                  AI integration, and e-commerce solutions. My 7+ years of industry experience (AWS, Opendoor) ensures enterprise-grade scalability.
                 </p>
               </CardContent>
             </Card>
@@ -350,7 +350,7 @@ This message was sent from the Mitman Solutions contact form.`);
               Ready to Accelerate Your Business?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Let&apos;s start the conversation about how technology can drive your success.
+              Let&apos;s start the conversation and see how technology can drive your success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

@@ -7,106 +7,103 @@ export default function About() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 via-background to-blue-50/30 py-20 lg:py-32">
+      <section className="bg-gradient-to-br from-primary/5 via-background to-blue-50/30 py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl font-bold tracking-tight">
-                Meet Matt Mitman
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-6 text-center lg:text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
+                How We <span className="gradient-text">Transform</span> Your Business
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Senior Software Engineer turned entrepreneur, bringing enterprise-scale solutions 
-                to businesses ready to accelerate their digital transformation.
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                Mitman Solutions brings enterprise-grade engineering expertise to modernize your technology stack, 
+                streamline operations, and accelerate growth through smart software solutions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild>
-                  <Link href="/contact">Let&apos;s Work Together</Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="hover-lift" asChild>
+                  <Link href="/contact">Start Your Project</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <a 
-                    href="https://www.linkedin.com/in/matt-mitman-01191688/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    View LinkedIn Profile
-                  </a>
+                <Button size="lg" variant="outline" className="hover-lift" asChild>
+                  <Link href="/services">View Our Services</Link>
                 </Button>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <Image
-                src="/images/mitman-solutions-transparent.png"
-                alt="Matt Mitman - Mitman Solutions"
-                width={350}
-                height={350}
-                className="object-contain drop-shadow-2xl"
-                priority
-              />
+              <div className="relative">
+                <Image
+                  src="/images/mitman-solutions-transparent.png"
+                  alt="Mitman Solutions"
+                  width={350}
+                  height={350}
+                  className="object-contain drop-shadow-2xl animate-float"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl -z-10"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section className="py-20">
+      <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold">Professional Experience</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Building scalable software solutions at world-class companies and helping businesses 
-              leverage cutting-edge technology for growth.
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+              Why Your Business Can <span className="gradient-text">Trust</span> Our Expertise
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Our solutions are backed by experience building enterprise-scale systems that serve millions of users. 
+              We bring that same level of reliability and performance to your business.
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift">
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
                     <span className="text-orange-600 font-bold text-lg">AWS</span>
                   </div>
                   <div>
-                    <CardTitle className="text-xl">Amazon Web Services</CardTitle>
-                    <CardDescription className="text-lg">Senior Software Engineer</CardDescription>
+                    <CardTitle className="text-xl text-foreground">Enterprise-Scale Experience</CardTitle>
+                    <CardDescription className="text-lg">Amazon Web Services - Senior Engineer</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Built and scaled cloud infrastructure solutions serving millions of customers globally. 
-                  Specialized in distributed systems, microservices architecture, and high-availability solutions.
+                  <strong className="text-foreground">What this means for you:</strong> Your applications get the same reliability and scalability that powers millions of AWS customers. We build systems that grow with your business without breaking.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Designed scalable cloud-native applications</li>
-                  <li>• Implemented distributed systems and microservices</li>
-                  <li>• Optimized performance for enterprise-scale workloads</li>
-                  <li>• Mentored engineering teams on best practices</li>
+                  <li>• Cloud infrastructure that scales automatically</li>
+                  <li>• High-availability systems with 99.9% uptime</li>
+                  <li>• Security practices from enterprise environments</li>
+                  <li>• Performance optimization for any scale</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift">
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <span className="text-blue-600 font-bold text-lg">OD</span>
+                    <span className="text-blue-600 font-bold text-lg">🏠</span>
                   </div>
                   <div>
-                    <CardTitle className="text-xl">Opendoor</CardTitle>
-                    <CardDescription className="text-lg">Software Engineer</CardDescription>
+                    <CardTitle className="text-xl text-foreground">Innovation & User Experience</CardTitle>
+                    <CardDescription className="text-lg">Opendoor - Product Engineering</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Revolutionized real estate technology by building platforms that simplified home buying 
-                  and selling through innovative software solutions and data-driven insights.
+                  <strong className="text-foreground">What this means for you:</strong> We understand how to build software that real people actually want to use. Your customers will love the intuitive experiences we create.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Developed real estate transaction platforms</li>
-                  <li>• Built data analytics and pricing algorithms</li>
-                  <li>• Created user-facing applications for seamless experiences</li>
-                  <li>• Integrated with external APIs and financial systems</li>
+                  <li>• User-centered design that converts visitors</li>
+                  <li>• Data-driven insights for better decisions</li>
+                  <li>• Seamless integrations with existing systems</li>
+                  <li>• Mobile-first experiences that work everywhere</li>
                 </ul>
               </CardContent>
             </Card>
@@ -171,16 +168,15 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="bg-gradient-to-r from-primary/5 to-blue-50/30 py-20">
+      <section className="bg-gradient-to-r from-primary/5 to-blue-50/30 py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              My Mission: Accelerating Business Through Technology
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+              Our <span className="gradient-text">Commitment</span> to Your Success
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Based in Wisconsin, I believe there&apos;s immense opportunity to help businesses 
-              leverage the power of e-commerce, Generative AI, and modern software solutions 
-              to accelerate their mission and drive unprecedented growth.
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              We&apos;re dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
+              Your success is our primary focus, and we measure our value by the growth we help you achieve.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

@@ -15,8 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mitman Solutions - Software Consulting & Freelancing",
-  description: "Professional software consulting and freelancing services. Custom web development, mobile apps, and technical strategy for modern businesses.",
+  title: "Mitman Solutions - Modernize Your Tech Stack",
+  description: "Transform your business with enterprise-grade software solutions. E-commerce, AI integration, and modern web applications that drive growth.",
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
