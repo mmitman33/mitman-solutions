@@ -21,7 +21,7 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
               entry.target.classList.add("animate-in")
               
               // Clean up will-change after animation completes
-              const animationDuration = entry.target.classList.contains("stagger-animation") ? 1400 : 1200
+              const animationDuration = entry.target.classList.contains("stagger-animation") ? 1200 : 1200
               const delay = entry.target.classList.contains("stagger-animation") 
                 ? parseFloat(getComputedStyle(entry.target).getPropertyValue("--stagger-delay") || "0s") * 1000 
                 : 0
@@ -35,8 +35,8 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
         })
       },
       {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.15,
+        rootMargin: "0px 0px -100px 0px"
       }
     )
 

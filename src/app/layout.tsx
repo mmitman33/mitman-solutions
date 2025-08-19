@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Mitman Solutions",
     images: [
       {
-        url: "/og-image.png",
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "Mitman Solutions: Accelerate Your Impact",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mitman Solutions: Accelerate Your Impact",
     description: "Transform your business with enterprise-grade software solutions. E-commerce, AI integration, and modern web applications that drive growth.",
-    images: ["/og-image.png"],
+    images: ["/api/og"],
   },
 };
 
