@@ -186,10 +186,10 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Our <span className="text-primary font-extrabold">Commitment</span> to Your Success
+              My <span className="text-primary font-extrabold">Commitment</span> to Your Success
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              I&apos;m dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
+              I&apos;m dedicated to modernizing businesses across Wisconsin and beyond via strategic use of software. 
               Your success is my primary focus, and I measure my value by the growth you achieve.
             </p>
             

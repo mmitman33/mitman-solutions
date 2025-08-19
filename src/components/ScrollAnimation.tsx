@@ -12,6 +12,8 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
   const elementRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const currentElement = elementRef.current
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -40,13 +42,13 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
       }
     )
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current)
+    if (currentElement) {
+      observer.observe(currentElement)
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current)
+      if (currentElement) {
+        observer.unobserve(currentElement)
       }
     }
   }, [])

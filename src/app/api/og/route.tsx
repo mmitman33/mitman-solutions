@@ -25,15 +25,21 @@ export async function GET() {
             gap: '32px',
           }}
         >
-          <img
-            src="https://mitman-solutions.com/images/icon-only-large.png"
-            alt="Mitman Solutions"
-            width="200"
-            height="200"
+          <div
             style={{
-              objectFit: 'contain',
+              width: '200px',
+              height: '200px',
+              background: 'linear-gradient(135deg, #3b82f6, #6366f1)',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '120px',
+              color: 'white',
             }}
-          />
+          >
+            ⚡
+          </div>
           <div
             style={{
               fontSize: '48px',

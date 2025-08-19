@@ -106,7 +106,7 @@ export default function Contact() {
               
               <Card>
                 <CardHeader>
-                  <CardTitle>Let's get after it!</CardTitle>
+                  <CardTitle>Let&apos;s get after it!</CardTitle>
                   <CardDescription>
                     Tell us about your business and any projects you have in mind.
                   </CardDescription>
