@@ -18,10 +18,8 @@ export default function About() {
         
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight">
-                <span className="inline-block animate-fade-in">How We</span>{" "}
-                <span className="text-primary font-extrabold inline-block animate-fade-in" style={{"animationDelay": "0.2s"} as React.CSSProperties}>Transform</span>{" "}
-                <span className="inline-block animate-fade-in" style={{"animationDelay": "0.4s"} as React.CSSProperties}>Your Business</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight animate-fade-in">
+                How We <span className="text-primary font-extrabold">Transform</span> Your Business
               </h1>
             
             <ScrollAnimation>
@@ -131,17 +129,8 @@ export default function About() {
                 <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-4">
                     Strong foundation in computer science fundamentals, algorithms, 
-                    and software engineering principles from this prestigious Ivy League institution.
+                    and software engineering principles from Dartmouth College.
                   </p>
-                  <Button variant="outline" size="sm" className="group-hover:border-green-400 transition-colors" asChild>
-                    <a 
-                      href="https://dartmouth.edu"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      Learn About Dartmouth
-                    </a>
-                  </Button>
                 </CardContent>
               </Card>
             </ScrollAnimation>
