@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { InitialAnimation } from "@/components/InitialAnimation";
+import { SectionAccent } from "@/components/SectionAccent";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -86,6 +87,8 @@ export default function Contact() {
           </InitialAnimation>
         </div>
       </section>
+
+      <SectionAccent />
 
       {/* Contact Options */}
       <section className="py-24">

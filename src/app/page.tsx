@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { InitialAnimation } from "@/components/InitialAnimation";
+import { SectionAccent } from "@/components/SectionAccent";
 
 export default function Home() {
   return (
@@ -54,6 +55,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SectionAccent />
 
       {/* What We Do Section */}
       <section className="py-16 lg:py-20">

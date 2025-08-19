@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { SectionAccent } from "@/components/SectionAccent";
 
 export default function About() {
   return (
@@ -28,28 +29,11 @@ export default function About() {
                 streamline operations, and accelerate growth through smart software solutions.
               </p>
             </ScrollAnimation>
-
-            {/* Logo with Sleek Animation */}
-            <ScrollAnimation>
-              <div className="flex justify-center mt-8 mb-2">
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-blue-500/20 to-green-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
-                  <div className="relative p-4 animate-float">
-                    <Image
-                      src="/images/icon-only-large.png"
-                      alt="Mitman Solutions"
-                      width={240}
-                      height={240}
-                      className="object-contain hover:scale-110 transition-transform duration-300"
-                      priority
-                    />
-                  </div>
-                </div>
-              </div>
-            </ScrollAnimation>
           </div>
         </div>
       </section>
+
+      <SectionAccent />
 
       {/* Experience Section */}
       <section className="py-20 lg:py-24">
@@ -246,7 +230,7 @@ export default function About() {
             </div>
 
             <div className="pt-8">
-              <Button size="lg" asChild>
+              <Button size="lg" className="hover-lift" asChild>
                 <Link href="/contact">Start Your Digital Transformation</Link>
               </Button>
             </div>

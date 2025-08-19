@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { InitialAnimation } from "@/components/InitialAnimation";
+import { SectionAccent } from "@/components/SectionAccent";
 
 export default function Services() {
   return (
@@ -30,12 +31,14 @@ export default function Services() {
                 <strong className="text-foreground font-extrabold"> We deliver the technology solutions you need to succeed.</strong>
               </p>
               <Button size="lg" className="hover-lift" asChild>
-                <Link href="/contact">Let&apos;s Talk About Your Needs</Link>
+                <Link href="/contact">Let&apos;s Get in Touch</Link>
               </Button>
             </div>
           </InitialAnimation>
         </div>
       </section>
+
+      <SectionAccent />
 
       {/* Core Services */}
       <section className="py-16 lg:py-20">
@@ -72,7 +75,7 @@ export default function Services() {
                 <circle cx="25" cy="37" r="1.5" fill="currentColor" opacity="0.5" />
               </svg>
             </div>
-            <CardTitle className="text-xl text-foreground font-extrabold">🚀 Launching</CardTitle>
+            <CardTitle className="text-xl text-foreground font-extrabold">🚀 Launch</CardTitle>
             <CardDescription className="text-lg">
               Got a product idea or starting a new business?
             </CardDescription>
@@ -112,7 +115,7 @@ export default function Services() {
                 <path d="M28 12L32 8L36 12" stroke="currentColor" strokeWidth="2" fill="none" />
               </svg>
             </div>
-            <CardTitle className="text-xl text-foreground font-extrabold">📈 Scaling</CardTitle>
+            <CardTitle className="text-xl text-foreground font-extrabold">📈 Scale</CardTitle>
             <CardDescription className="text-lg">
               Growing fast and hitting technical limits?
             </CardDescription>
@@ -151,7 +154,7 @@ export default function Services() {
                 <path d="M27 20l2 2 4-4" stroke="currentColor" strokeWidth="2" fill="none" />
               </svg>
             </div>
-            <CardTitle className="text-xl text-foreground font-extrabold">⚡ Streamlining</CardTitle>
+            <CardTitle className="text-xl text-foreground font-extrabold">⚡ Streamline</CardTitle>
             <CardDescription className="text-lg">
               Manual processes slowing you down?
             </CardDescription>
@@ -326,10 +329,10 @@ export default function Services() {
               Let&apos;s discuss how we can leverage technology to accelerate your business goals and create a lasting competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
+              <Button size="lg" className="hover-lift" asChild>
                 <Link href="/contact">Schedule a Consultation</Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="hover-lift" asChild>
                 <a href="tel:414-526-6926">Call (414) 526-6926</a>
               </Button>
             </div>

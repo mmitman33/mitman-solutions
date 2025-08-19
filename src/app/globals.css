@@ -267,6 +267,23 @@
         }
       }
 
+      .animate-lightning-pulse {
+        animation: lightningPulse 2s ease-in-out infinite;
+      }
+
+      @keyframes lightningPulse {
+        0%, 100% { 
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% { 
+          opacity: 1;
+          transform: scale(1.15);
+        }
+      }
+
+
+
       .animate-on-scroll {
         opacity: 0;
         transform: translateY(30px);
