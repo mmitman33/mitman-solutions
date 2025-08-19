@@ -27,7 +27,7 @@ This message was sent from the Mitman Solutions contact form.
     `.trim();
 
     // Create transporter for Nodemailer
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER || 'mitman.solutions@gmail.com',

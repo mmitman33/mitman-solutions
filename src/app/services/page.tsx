@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
@@ -42,9 +41,9 @@ export default function Services() {
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Here's How We <span className="text-primary font-extrabold">Help You Win</span>
-            </h2>
+                          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+                Here&apos;s How We <span className="text-primary font-extrabold">Help You Win</span>
+              </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Whether you&apos;re starting fresh, growing fast, or optimizing operations
             </p>
