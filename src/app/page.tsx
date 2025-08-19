@@ -135,10 +135,10 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <Button size="lg" className="hover-lift flex-1 h-12 sm:h-auto" asChild>
+              <Button size="lg" className="hover-lift flex-1 h-14 sm:h-16 py-4 text-base font-semibold" asChild>
                 <a href="tel:414-526-6926">Call (414) 526-6926</a>
               </Button>
-              <Button size="lg" variant="outline" className="hover-lift flex-1 h-12 sm:h-auto" asChild>
+              <Button size="lg" variant="outline" className="hover-lift flex-1 h-14 sm:h-16 py-4 text-base font-semibold" asChild>
                 <Link href="/contact">Send Message</Link>
               </Button>
             </div>
