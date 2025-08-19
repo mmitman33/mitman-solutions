@@ -22,28 +22,28 @@ export async function GET() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '24px',
+            gap: '32px',
           }}
         >
+          <img
+            src="https://mitman-solutions.com/images/icon-only-large.png"
+            alt="Mitman Solutions"
+            width="200"
+            height="200"
+            style={{
+              objectFit: 'contain',
+            }}
+          />
           <div
             style={{
-              fontSize: '64px',
+              fontSize: '48px',
               fontWeight: 'bold',
               color: '#1a1a1a',
               textAlign: 'center',
               lineHeight: '1.2',
             }}
           >
-            Accelerate Your Impact
-          </div>
-          <div
-            style={{
-              fontSize: '32px',
-              color: '#666',
-              textAlign: 'center',
-            }}
-          >
-            mitman-solutions.com
+            Mitman Solutions: Accelerate Your Impact
           </div>
         </div>
       </div>
