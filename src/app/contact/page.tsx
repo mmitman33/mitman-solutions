@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { InitialAnimation } from "@/components/InitialAnimation";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -43,16 +45,18 @@ This message was sent from the Mitman Solutions contact form.`);
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-background to-green-50/20 py-20 lg:py-32">
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Let&apos;s Build Something
-              <span className="text-primary block">Amazing</span>
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Ready to accelerate your impact? 
-              Let&apos;s discuss your needs and start shipping products that your customers love.
-            </p>
-          </div>
+          <InitialAnimation delay={400}>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
+                Let&apos;s Build Something
+                <span className="text-primary block">Amazing</span>
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Ready to accelerate your impact? 
+                Let&apos;s discuss your needs and start shipping products that your customers love.
+              </p>
+            </div>
+          </InitialAnimation>
         </div>
       </section>
 

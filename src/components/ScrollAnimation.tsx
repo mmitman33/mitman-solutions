@@ -16,7 +16,18 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in")
+            // Handle stagger animations with delays
+            if (entry.target.classList.contains("stagger-animation")) {
+              const delay = getComputedStyle(entry.target).getPropertyValue("--stagger-delay") || "0s"
+              const delayMs = parseFloat(delay) * 1000
+              
+              setTimeout(() => {
+                entry.target.classList.add("animate-in")
+              }, delayMs)
+            } else {
+              entry.target.classList.add("animate-in")
+            }
+            observer.unobserve(entry.target) // Observe once
           }
         })
       },

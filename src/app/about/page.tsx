@@ -42,7 +42,7 @@ export default function About() {
 
             {/* Enhanced Transformation Animation */}
             <ScrollAnimation>
-              <div className="flex justify-center mt-24 mb-20">
+              <div className="flex justify-center mt-24 mb-8">
                 <div className="relative">
                   <svg 
                     width="500" 

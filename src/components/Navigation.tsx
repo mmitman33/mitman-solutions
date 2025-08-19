@@ -2,11 +2,13 @@
 
 import React, { useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   // Prevent body scroll when menu is open
   React.useEffect(() => {
@@ -38,17 +40,57 @@ export function Navigation() {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link 
+            href="/" 
+            className={`transition-colors font-medium relative ${
+              pathname === "/" 
+                ? "text-primary font-extrabold" 
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
             Home
+            {pathname === "/" && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
+            )}
           </Link>
-          <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link 
+            href="/services" 
+            className={`transition-colors font-medium relative ${
+              pathname === "/services" 
+                ? "text-primary font-extrabold" 
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
             Services
+            {pathname === "/services" && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
+            )}
           </Link>
-          <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link 
+            href="/about" 
+            className={`transition-colors font-medium relative ${
+              pathname === "/about" 
+                ? "text-primary font-extrabold" 
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
             About
+            {pathname === "/about" && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
+            )}
           </Link>
-          <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link 
+            href="/contact" 
+            className={`transition-colors font-medium relative ${
+              pathname === "/contact" 
+                ? "text-primary font-extrabold" 
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
             Contact
+            {pathname === "/contact" && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
+            )}
           </Link>
         </div>
 
@@ -134,31 +176,59 @@ export function Navigation() {
           <div className="flex-1 p-4 space-y-4">
             <Link 
               href="/" 
-              className="block py-3 px-2 text-lg text-muted-foreground hover:text-foreground transition-colors border-b border-border/50"
+              className={`block py-3 px-2 text-lg transition-colors border-b border-border/50 relative ${
+                pathname === "/" 
+                  ? "text-primary font-extrabold bg-primary/5" 
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Home
+              {pathname === "/" && (
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r" />
+              )}
             </Link>
             <Link 
               href="/services" 
-              className="block py-3 px-2 text-lg text-muted-foreground hover:text-foreground transition-colors border-b border-border/50"
+              className={`block py-3 px-2 text-lg transition-colors border-b border-border/50 relative ${
+                pathname === "/services" 
+                  ? "text-primary font-extrabold bg-primary/5" 
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Services
+              {pathname === "/services" && (
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r" />
+              )}
             </Link>
             <Link 
               href="/about" 
-              className="block py-3 px-2 text-lg text-muted-foreground hover:text-foreground transition-colors border-b border-border/50"
+              className={`block py-3 px-2 text-lg transition-colors border-b border-border/50 relative ${
+                pathname === "/about" 
+                  ? "text-primary font-extrabold bg-primary/5" 
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
+              {pathname === "/about" && (
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r" />
+              )}
             </Link>
             <Link 
               href="/contact" 
-              className="block py-3 px-2 text-lg text-muted-foreground hover:text-foreground transition-colors border-b border-border/50"
+              className={`block py-3 px-2 text-lg transition-colors border-b border-border/50 relative ${
+                pathname === "/contact" 
+                  ? "text-primary font-extrabold bg-primary/5" 
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
+              {pathname === "/contact" && (
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r" />
+              )}
             </Link>
           </div>
 
