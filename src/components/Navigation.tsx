@@ -1,12 +1,26 @@
 "use client"
 
-import { useState } from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  // Prevent body scroll when menu is open
+  React.useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isMenuOpen])
 
   return (
     <nav className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
@@ -81,13 +95,13 @@ export function Navigation() {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div 
-          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
           onClick={() => setIsMenuOpen(false)}
         />
       )}
 
       {/* Mobile Menu */}
-      <div className={`fixed top-0 right-0 h-full w-80 bg-background/95 backdrop-blur-md border-l shadow-xl z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
+      <div className={`fixed top-0 right-0 h-screen w-80 bg-white border-l shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
