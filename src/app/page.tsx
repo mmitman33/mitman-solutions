@@ -19,7 +19,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Transform your operations with custom software, e-commerce solutions, and AI integration. 
+                Transform your operations with custom software solutions, e-commerce, and AI integration. 
                 <strong className="text-foreground">Built for growth, designed for results.</strong>
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative animate-fade-in">
                 <Image
-                  src="/images/mitman-solutions-transparent.png"
+                  src="/images/icon-only-large.png"
                   alt="Mitman Solutions"
                   width={600}
                   height={600}
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              What We <span className="gradient-text">Deliver</span>
+              What We <span className="text-primary font-extrabold text-shadow">Deliver</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Three core areas where technology transforms your business
@@ -131,7 +131,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Ready to <span className="gradient-text">Get Started</span>?
+              Ready to <span className="text-primary font-extrabold text-shadow">Get Started</span>?
             </h2>
             <p className="text-lg text-muted-foreground">
               Let&apos;s discuss your project and see how we can help modernize your business.

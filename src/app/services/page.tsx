@@ -205,7 +205,7 @@ export default function Services() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold">My Process</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold">Our Process</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A proven methodology that ensures your project is delivered on time, within budget, and exceeds expectations.
             </p>
