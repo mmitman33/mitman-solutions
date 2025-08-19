@@ -270,7 +270,9 @@
       .animate-on-scroll {
         opacity: 0;
         transform: translateY(30px);
-        transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: opacity, transform;
+        backface-visibility: hidden;
       }
 
       .animate-on-scroll.animate-in {
@@ -279,14 +281,20 @@
       }
 
       .stagger-animation {
-        animation-delay: var(--stagger-delay, 0s);
         opacity: 0;
-        transform: translateY(40px) translateX(-20px);
-        transition: all 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateX(-50px) scale(0.95);
+        transition: opacity 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition-delay: var(--stagger-delay, 0s);
+        will-change: transform, opacity;
+        transform-origin: left center;
       }
 
       .stagger-animation.animate-in {
         opacity: 1;
-        transform: translateY(0) translateX(0);
+        transform: translateX(0) scale(1);
+      }
+
+      .stagger-animation.animate-complete {
+        will-change: auto;
       }
 }

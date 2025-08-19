@@ -13,24 +13,41 @@ export default function Contact() {
     company: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [emailCopied, setEmailCopied] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Business Inquiry from ${formData.name} - ${formData.company || 'Individual'}`);
-    const body = encodeURIComponent(`Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company || 'Not specified'}
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
 
-Message:
-${formData.message}
+    try {
+      // Send email using a simple API call
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+        }),
+      });
 
----
-This message was sent from the Mitman Solutions contact form.`);
-    
-    const mailtoLink = `mailto:mitman.solutions@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', company: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,6 +57,16 @@ This message was sent from the Mitman Solutions contact form.`);
     });
   };
 
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText('mitman.solutions@gmail.com');
+      setEmailCopied(true);
+      setTimeout(() => setEmailCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy email:', err);
+    }
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -47,11 +74,11 @@ This message was sent from the Mitman Solutions contact form.`);
         <div className="container mx-auto px-4 text-center">
           <InitialAnimation delay={400}>
             <div className="max-w-4xl mx-auto space-y-6">
-              <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
                 Let&apos;s Build Something
-                <span className="text-primary block">Amazing</span>
+                <span className="text-primary block">Amazing.</span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
                 Ready to accelerate your impact? 
                 Let&apos;s discuss your needs and start shipping products that your customers love.
               </p>
@@ -61,23 +88,24 @@ This message was sent from the Mitman Solutions contact form.`);
       </section>
 
       {/* Contact Options */}
-      <section className="py-20">
+      <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Send a Message</h2>
-                <p className="text-muted-foreground text-lg">
-                  Fill out the form below and I&apos;ll get back to you within 24 hours to discuss your project.
-                </p>
-              </div>
+            <ScrollAnimation>
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-3xl font-bold mb-4">Send a Message</h2>
+                  <p className="text-muted-foreground text-lg">
+                    Fill out the form below and I&apos;ll get back to you within 24 hours to discuss your project.
+                  </p>
+                </div>
               
               <Card>
                 <CardHeader>
                   <CardTitle>Project Inquiry</CardTitle>
                   <CardDescription>
-                    Tell me about your project and how I can help accelerate your business goals.
+                    Tell us about your project and how I can help accelerate your business goals.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -142,26 +170,45 @@ This message was sent from the Mitman Solutions contact form.`);
                         value={formData.message}
                         onChange={handleChange}
                         className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-vertical"
-                        placeholder="Tell me about your project, timeline, budget, and specific requirements..."
+                        placeholder="Tell us about your project, timeline, budget, and specific requirements..."
                       />
                     </div>
                     
-                    <Button type="submit" size="lg" className="w-full">
-                      Send Message
+                    <Button 
+                      type="submit" 
+                      size="lg" 
+                      className="w-full" 
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? 'Sending...' : submitStatus === 'success' ? 'Message Sent!' : 'Send Message'}
                     </Button>
+                    
+                    {submitStatus === 'success' && (
+                      <div className="text-green-600 text-center text-sm">
+                        ✅ Your message has been sent successfully! I'll get back to you within 24 hours.
+                      </div>
+                    )}
+                    
+                    {submitStatus === 'error' && (
+                      <div className="text-red-600 text-center text-sm">
+                        ❌ There was an error sending your message. Please try again or contact me directly.
+                      </div>
+                    )}
                   </form>
                 </CardContent>
               </Card>
-            </div>
+              </div>
+            </ScrollAnimation>
 
             {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-                <p className="text-muted-foreground text-lg">
-                  Prefer to reach out directly? Use any of the methods below to connect with me.
-                </p>
-              </div>
+            <ScrollAnimation>
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+                  <p className="text-muted-foreground text-lg">
+                    Prefer to reach out directly? Use any of the methods below to connect with me.
+                  </p>
+                </div>
 
               <div className="space-y-6">
                 <Card className="hover:shadow-lg transition-shadow">
@@ -177,10 +224,12 @@ This message was sent from the Mitman Solutions contact form.`);
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <Button variant="outline" className="w-full" asChild>
-                      <a href="mailto:mitman.solutions@gmail.com">
-                        mitman.solutions@gmail.com
-                      </a>
+                    <Button 
+                      variant="outline" 
+                      className="w-full" 
+                      onClick={copyEmail}
+                    >
+                      {emailCopied ? '✓ Email Copied!' : 'mitman.solutions@gmail.com'}
                     </Button>
                   </CardContent>
                 </Card>
@@ -255,23 +304,25 @@ This message was sent from the Mitman Solutions contact form.`);
                   </p>
                 </CardContent>
               </Card>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-20">
+      <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-24">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Frequently Asked Questions</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Get answers to common questions about working with Mitman Solutions.
             </p>
-          </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <Card>
+            <ScrollAnimation className="stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
+              <Card>
               <CardHeader>
                 <CardTitle className="text-lg">What&apos;s your typical project timeline?</CardTitle>
               </CardHeader>
@@ -281,21 +332,25 @@ This message was sent from the Mitman Solutions contact form.`);
                   while complex applications can take 2-6 months. I&apos;ll provide detailed timeline estimates during our initial consultation.
                 </p>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Do you work with startups and small businesses?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Absolutely! I have experience working with businesses of all sizes. 
-                  I&apos;ll gladly level-set my approach to match your budget, growth stage, and business needs.
-                </p>
-              </CardContent>
-            </Card>
+            <ScrollAnimation className="stagger-animation" style={{"--stagger-delay": "0.4s"} as React.CSSProperties}>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Do you work with startups and small businesses?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Absolutely! I have experience working with businesses of all sizes. 
+                    I&apos;ll gladly level-set my approach to match your budget, growth stage, and business needs.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
 
-            <Card>
+            <ScrollAnimation className="stagger-animation" style={{"--stagger-delay": "0.6s"} as React.CSSProperties}>
+              <Card>
               <CardHeader>
                 <CardTitle className="text-lg">What technologies do you specialize in?</CardTitle>
               </CardHeader>
@@ -305,19 +360,22 @@ This message was sent from the Mitman Solutions contact form.`);
                   AI integration, and e-commerce solutions. In my 7+ years of industry experience (AWS, Opendoor, MVP Tactical) I&apos;ve delivered enterprise-grade products for businesses of all sizes.
                 </p>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Do you provide ongoing support after launch?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Yes! I offer various support packages including maintenance, feature updates, performance monitoring, 
-                  and technical consultation to ensure your products continue to meet your evolving needs.
-                </p>
-              </CardContent>
-            </Card>
+            <ScrollAnimation className="stagger-animation" style={{"--stagger-delay": "0.8s"} as React.CSSProperties}>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Do you provide ongoing support after launch?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Yes! I offer various support packages including maintenance, feature updates, performance monitoring, 
+                    and technical consultation to ensure your products continue to meet your evolving needs.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -327,7 +385,7 @@ This message was sent from the Mitman Solutions contact form.`);
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold">
-              Ready to Accelerate Your Business?
+              Ready to Get Started?
             </h2>
           </div>
         </div>

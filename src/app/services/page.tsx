@@ -13,8 +13,11 @@ export default function Services() {
         <div className="container mx-auto px-4 text-center">
           <InitialAnimation delay={400}>
             <div className="max-w-4xl mx-auto space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-                We&apos;re Here to Help Whether You&apos;re
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
+                We&apos;re Here to Help.
+                <span className="text-3xl sm:text-4xl lg:text-5xl text-foreground block font-semibold mt-6 mb-4">
+                  Whether You&apos;re:
+                </span>
                 <span className="text-2xl sm:text-3xl lg:text-4xl text-primary block font-extrabold mt-4">
                   <span className="inline-block animate-fade-in" style={{"animationDelay": "1.0s"} as React.CSSProperties}>Launching</span>
                   <span className="mx-2 text-muted-foreground">•</span>
@@ -23,9 +26,9 @@ export default function Services() {
                   <span className="inline-block animate-fade-in" style={{"animationDelay": "2.2s"} as React.CSSProperties}>Streamlining</span>
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Whether you are working on a new product idea, growing your businesses or optimizing operations.
-                <strong className="text-foreground font-extrabold">  We deliver the technology solutions you need to succeed.</strong>
+              <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                Working on a new product idea. Growing your business. Optimizing operations.
+                <strong className="text-foreground font-extrabold"> We deliver the technology solutions you need to succeed.</strong>
               </p>
               <Button size="lg" className="hover-lift" asChild>
                 <Link href="/contact">Let&apos;s Talk About Your Needs</Link>
@@ -40,7 +43,7 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Three Ways We <span className="text-primary font-extrabold">Help You Win</span>
+              Here's How We <span className="text-primary font-extrabold">Help You Win</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Whether you&apos;re starting fresh, growing fast, or optimizing operations
@@ -173,7 +176,7 @@ export default function Services() {
       </section>
 
       {/* Consulting Services */}
-      <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-20">
+      <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-24">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technology Consulting</h2>
@@ -251,7 +254,7 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20">
+      <section className="py-24">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Our Process</h2>

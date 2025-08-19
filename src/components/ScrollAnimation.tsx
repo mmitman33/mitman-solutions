@@ -16,17 +16,20 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Handle stagger animations with delays
-            if (entry.target.classList.contains("stagger-animation")) {
-              const delay = getComputedStyle(entry.target).getPropertyValue("--stagger-delay") || "0s"
-              const delayMs = parseFloat(delay) * 1000
+            // Use requestAnimationFrame for smooth animation trigger
+            requestAnimationFrame(() => {
+              entry.target.classList.add("animate-in")
+              
+              // Clean up will-change after animation completes
+              const animationDuration = entry.target.classList.contains("stagger-animation") ? 1400 : 1200
+              const delay = entry.target.classList.contains("stagger-animation") 
+                ? parseFloat(getComputedStyle(entry.target).getPropertyValue("--stagger-delay") || "0s") * 1000 
+                : 0
               
               setTimeout(() => {
-                entry.target.classList.add("animate-in")
-              }, delayMs)
-            } else {
-              entry.target.classList.add("animate-in")
-            }
+                entry.target.classList.add("animate-complete")
+              }, animationDuration + delay)
+            })
             observer.unobserve(entry.target) // Observe once
           }
         })

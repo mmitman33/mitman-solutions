@@ -11,17 +11,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-blue-50/30 py-12 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial opacity-50"></div>
-        <div className="container mx-auto px-4 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="container mx-auto px-4 lg:px-8 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <InitialAnimation delay={400}>
-              <div className="space-y-6 text-center lg:text-left">
-                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-balance">
-                  <span className="text-primary font-extrabold">Modernize</span> Your Business
-                  <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 text-foreground">
+              <div className="space-y-6 text-center lg:text-left lg:pl-4">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
+                  <span className="text-primary font-extrabold">Modernize Your Business</span>
+                  <span className="block text-3xl sm:text-4xl lg:text-5xl mt-4 text-foreground font-semibold">
                     with Smart Technology
                   </span>
                 </h1>
-                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   Transform your operations with custom software solutions, e-commerce, and AI integration. 
                   <strong className="text-foreground"> Built for growth, designed for results.</strong>
                 </p>
@@ -36,7 +36,7 @@ export default function Home() {
               </div>
             </InitialAnimation>
             <InitialAnimation delay={800}>
-              <div className="flex justify-center lg:justify-end">
+              <div className="flex justify-center lg:justify-end lg:pr-4">
                 <div className="relative animate-fade-in">
         <Image
                     src="/images/icon-only-large.png"
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-12 lg:py-16">
+      <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 via-background to-blue-50/20 py-16 lg:py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary/5 via-background to-blue-50/20 py-20 lg:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial opacity-50"></div>
         <div className="container mx-auto px-4 text-center relative">
           <ScrollAnimation>

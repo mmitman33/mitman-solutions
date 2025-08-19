@@ -8,7 +8,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Mitman Solutions</h3>
             <p className="text-muted-foreground text-sm">
-              Professional software consulting and freelancing services for modern businesses.
+              Professional software consulting and freelancing services.  Accelerate your business.
             </p>
           </div>
           
