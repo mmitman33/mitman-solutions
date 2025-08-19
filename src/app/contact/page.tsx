@@ -81,7 +81,7 @@ export default function Contact() {
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
                 Ready to accelerate your impact? 
-                Let&apos;s discuss your needs and start shipping products that your customers love.
+                Let&apos;s discuss your needs and start shipping products that your customers will love.
               </p>
             </div>
           </InitialAnimation>

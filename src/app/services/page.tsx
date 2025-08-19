@@ -183,7 +183,7 @@ export default function Services() {
           <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technical Consulting</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Beyond development, I provide strategic guidance so you make the right technical decisions and ship products that your customers love.
+              Beyond development, I provide strategic guidance so we make the right technical decisions and ship products that your customers will love.
             </p>
           </ScrollAnimation>
           
