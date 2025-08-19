@@ -39,7 +39,8 @@ export default function Services() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-                    <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center animate-on-scroll stagger-animation" style={{"--stagger-delay": "0.1s"} as React.CSSProperties}>
+            <ScrollAnimation>
+              <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center stagger-animation" style={{"--stagger-delay": "0.1s"} as React.CSSProperties}>
           <CardHeader>
             <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mx-auto mb-4 animate-rocket">
               <svg
@@ -78,8 +79,10 @@ export default function Services() {
                 </ul>
               </CardContent>
             </Card>
+            </ScrollAnimation>
 
-                    <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift text-center animate-on-scroll stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
+            <ScrollAnimation>
+              <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift text-center stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
           <CardHeader>
             <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mx-auto mb-4 animate-growth">
               <svg
@@ -116,8 +119,10 @@ export default function Services() {
                 </ul>
               </CardContent>
             </Card>
+            </ScrollAnimation>
 
-                    <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center animate-on-scroll stagger-animation" style={{"--stagger-delay": "0.3s"} as React.CSSProperties}>
+            <ScrollAnimation>
+              <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center stagger-animation" style={{"--stagger-delay": "0.3s"} as React.CSSProperties}>
           <CardHeader>
             <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center mx-auto mb-4 overflow-hidden">
               <svg
@@ -153,6 +158,7 @@ export default function Services() {
                 </ul>
               </CardContent>
             </Card>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -163,7 +169,7 @@ export default function Services() {
           <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technology Consulting</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Beyond development, I provide strategic guidance to help you make the right technology decisions.
+              Beyond development, we provide strategic guidance so you make the right software decisions and ship products that your customers love.
             </p>
           </ScrollAnimation>
           
@@ -173,11 +179,11 @@ export default function Services() {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-blue-600 font-bold text-2xl">🎯</span>
                 </div>
-                <CardTitle className="text-lg">Technology Strategy</CardTitle>
+                <CardTitle className="text-lg">Technical Strategy</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Align your technology investments with business goals and create a roadmap for digital transformation.
+                  Align your technical investments with business goals and create a roadmap for digital transformation.
                 </p>
               </CardContent>
             </Card>
@@ -191,7 +197,7 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Evaluate existing systems and design scalable architectures that support future growth.
+                  Evaluate existing systems and design scalable systems to support future growth.
                 </p>
               </CardContent>
             </Card>
@@ -205,7 +211,7 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Level up your development team with best practices, code reviews, and technical leadership.
+                  Level up your team with best practices, system designs, code reviews, and technical leadership.
                 </p>
               </CardContent>
             </Card>
@@ -244,7 +250,7 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-semibold">Discovery & Strategy</h3>
               <p className="text-muted-foreground">
-                Deep dive into your business goals, technical requirements, and user needs to create a comprehensive project plan.
+                Deep dive into your business goals, technical requirements, and customer needs to create a comprehensive project plan.
               </p>
             </div>
             
@@ -289,7 +295,7 @@ export default function Services() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Let&apos;s discuss how we can leverage technology to accelerate your business goals and create lasting competitive advantages.
+              Let&apos;s discuss how we can leverage technology to accelerate your business goals and create a lasting competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

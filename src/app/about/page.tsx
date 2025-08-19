@@ -121,7 +121,7 @@ export default function About() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Strong foundation in computer science fundamentals, algorithms, 
-                  and software engineering principles from this prestigious Ivy League institution.
+                  and software engineering principles.
                 </p>
               </CardContent>
             </Card>
@@ -129,16 +129,25 @@ export default function About() {
             <Card className="text-center">
               <CardHeader>
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-purple-600 font-bold text-xl">📱</span>
+                  <span className="text-purple-600 font-bold text-xl">🦾</span>
                 </div>
                 <CardTitle>Patent Holder</CardTitle>
                 <CardDescription>Mobile Virtual Player Tactical</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-4">
                   Co-inventor and patent holder for the MVP Tactical HEKTR system, 
                   demonstrating a track record of creativity and cutting-edge problem solving.
                 </p>
+                <Button variant="outline" size="sm" asChild>
+                  <a 
+                    href="https://www.mvprobotics.com/tactical"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    View HEKTR System
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 

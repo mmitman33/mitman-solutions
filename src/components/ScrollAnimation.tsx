@@ -5,9 +5,10 @@ import { useEffect, useRef } from "react"
 interface ScrollAnimationProps {
   children: React.ReactNode
   className?: string
+  style?: React.CSSProperties
 }
 
-export function ScrollAnimation({ children, className = "" }: ScrollAnimationProps) {
+export function ScrollAnimation({ children, className = "", style }: ScrollAnimationProps) {
   const elementRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -37,7 +38,7 @@ export function ScrollAnimation({ children, className = "" }: ScrollAnimationPro
   }, [])
 
   return (
-    <div ref={elementRef} className={`animate-on-scroll ${className}`}>
+    <div ref={elementRef} className={`animate-on-scroll ${className}`} style={style}>
       {children}
     </div>
   )

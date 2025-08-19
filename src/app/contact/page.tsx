@@ -49,8 +49,8 @@ This message was sent from the Mitman Solutions contact form.`);
               <span className="text-primary block">Amazing</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Ready to accelerate your business? 
-              Let&apos;s discuss your needs and build a plan to drive your success.
+              Ready to accelerate your impact? 
+              Let&apos;s discuss your needs and start shipping products that your customers love.
             </p>
           </div>
         </div>
@@ -298,7 +298,7 @@ This message was sent from the Mitman Solutions contact form.`);
               <CardContent>
                 <p className="text-muted-foreground">
                   I specialize in modern web technologies (React, Next.js, Node.js) and cloud platforms (AWS), 
-                  AI integration, and e-commerce solutions. In my 7+ years of industry experience (AWS, Opendoor, MVP Tactical) I&apos;ve delivered enterprise-grade products for any scale business.
+                  AI integration, and e-commerce solutions. In my 7+ years of industry experience (AWS, Opendoor, MVP Tactical) I&apos;ve delivered enterprise-grade products for businesses of all sizes.
                 </p>
               </CardContent>
             </Card>
@@ -325,9 +325,6 @@ This message was sent from the Mitman Solutions contact form.`);
             <h2 className="text-3xl lg:text-4xl font-bold">
               Ready to Accelerate Your Business?
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Let&apos;s start the conversation and see how technology can drive your success.
-            </p>
           </div>
         </div>
       </section>
