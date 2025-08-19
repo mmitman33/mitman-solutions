@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -6,152 +7,124 @@ export default function Services() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-purple-50/20 py-20 lg:py-32">
+      <section className="bg-gradient-to-br from-primary/10 via-background to-purple-50/20 py-16 lg:py-24">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Enterprise-Grade Solutions
-              <span className="text-primary block">for Modern Businesses</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
+              We&apos;re Here to Help Whether You&apos;re
+              <span className="text-primary block font-extrabold">Launching • Scaling • Streamlining</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              No matter your size, I deliver scalable software solutions 
-              that drive growth, improve efficiency, and create competitive advantages.
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              From new product ideas to growing businesses to operational efficiency - 
+              <strong className="text-foreground font-extrabold">we deliver the technology solutions you need to succeed.</strong>
             </p>
-            <Button size="lg" asChild>
-              <Link href="/contact">Start Your Project Today</Link>
+            <Button size="lg" className="hover-lift" asChild>
+              <Link href="/contact">Let&apos;s Talk About Your Needs</Link>
             </Button>
           </div>
         </div>
       </section>
 
       {/* Core Services */}
-      <section className="py-20">
+      <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold">Core Services</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive technology solutions backed by enterprise experience at AWS and proven startup success.
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+              Three Ways We <span className="text-primary font-extrabold">Help You Win</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Whether you&apos;re starting fresh, growing fast, or optimizing operations
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center">
               <CardHeader>
-                <div className="flex items-center space-x-4">
-                  <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <span className="text-blue-600 font-bold text-2xl">🌐</span>
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl">Web Application Development</CardTitle>
-                    <CardDescription className="text-lg">Full-stack solutions built for scale</CardDescription>
-                  </div>
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Image
+                    src="/images/icon-only-large.png"
+                    alt="Launch Icon"
+                    width={40}
+                    height={40}
+                    className="object-contain filter brightness-0 invert"
+                  />
                 </div>
+                <CardTitle className="text-xl text-foreground font-extrabold">🚀 Launching</CardTitle>
+                <CardDescription className="text-lg">
+                  Got a product idea or starting a new business?
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Custom web applications using modern frameworks like React, Next.js, and Node.js. 
-                  Built with enterprise-grade architecture principles learned at AWS.
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  <strong className="text-foreground font-extrabold">We&apos;ll bring your vision to life.</strong> From MVP development to full product launches, 
+                  we handle the technical complexity so you can focus on your customers.
                 </p>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>• React & Next.js</div>
-                  <div>• TypeScript</div>
-                  <div>• Node.js & Express</div>
-                  <div>• PostgreSQL & MongoDB</div>
-                  <div>• AWS Cloud Integration</div>
-                  <div>• RESTful APIs</div>
-                  <div>• Real-time Features</div>
-                  <div>• Performance Optimization</div>
-                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground text-left">
+                  <li className="font-semibold">• MVP & prototype development</li>
+                  <li className="font-semibold">• E-commerce stores & marketplaces</li>
+                  <li className="font-semibold">• Mobile app development</li>
+                  <li className="font-semibold">• Brand identity & web presence</li>
+                </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+            <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift text-center">
               <CardHeader>
-                <div className="flex items-center space-x-4">
-                  <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center">
-                    <span className="text-green-600 font-bold text-2xl">🛒</span>
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl">E-commerce Solutions</CardTitle>
-                    <CardDescription className="text-lg">Online stores that convert and scale</CardDescription>
-                  </div>
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Image
+                    src="/images/icon-only-large.png"
+                    alt="Scale Icon"
+                    width={40}
+                    height={40}
+                    className="object-contain filter brightness-0 invert"
+                  />
                 </div>
+                <CardTitle className="text-xl text-foreground font-extrabold">📈 Scaling</CardTitle>
+                <CardDescription className="text-lg">
+                  Growing fast and hitting technical limits?
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Complete e-commerce platforms with payment processing, inventory management, 
-                  and advanced analytics to maximize your online revenue.
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  <strong className="text-foreground font-extrabold">We&apos;ll help you scale without breaking.</strong> Enterprise-grade infrastructure and 
+                  performance optimization to handle your growth.
                 </p>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>• Shopify & WooCommerce</div>
-                  <div>• Custom E-commerce</div>
-                  <div>• Payment Integration</div>
-                  <div>• Inventory Management</div>
-                  <div>• SEO Optimization</div>
-                  <div>• Analytics & Reporting</div>
-                  <div>• Mobile Optimization</div>
-                  <div>• Conversion Optimization</div>
-                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground text-left">
+                  <li className="font-semibold">• Cloud migration & optimization</li>
+                  <li className="font-semibold">• Performance & speed improvements</li>
+                  <li className="font-semibold">• Database optimization</li>
+                  <li className="font-semibold">• Auto-scaling infrastructure</li>
+                </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center">
               <CardHeader>
-                <div className="flex items-center space-x-4">
-                  <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center">
-                    <span className="text-purple-600 font-bold text-2xl">🤖</span>
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl">AI & Automation</CardTitle>
-                    <CardDescription className="text-lg">Generative AI solutions for business</CardDescription>
-                  </div>
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Image
+                    src="/images/icon-only-large.png"
+                    alt="Streamline Icon"
+                    width={40}
+                    height={40}
+                    className="object-contain filter brightness-0 invert"
+                  />
                 </div>
+                <CardTitle className="text-xl text-foreground font-extrabold">⚡ Streamlining</CardTitle>
+                <CardDescription className="text-lg">
+                  Manual processes slowing you down?
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Integrate cutting-edge AI capabilities into your business processes to automate tasks, 
-                  enhance customer experiences, and unlock new opportunities.
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  <strong className="text-foreground font-extrabold">We&apos;ll automate what matters.</strong> Custom tools and AI integration to eliminate 
+                  repetitive tasks and improve efficiency.
                 </p>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>• ChatGPT Integration</div>
-                  <div>• Custom AI Models</div>
-                  <div>• Process Automation</div>
-                  <div>• Natural Language Processing</div>
-                  <div>• Data Analysis & Insights</div>
-                  <div>• Chatbots & Virtual Assistants</div>
-                  <div>• Content Generation</div>
-                  <div>• Predictive Analytics</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-              <CardHeader>
-                <div className="flex items-center space-x-4">
-                  <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center">
-                    <span className="text-orange-600 font-bold text-2xl">☁️</span>
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl">Cloud & Infrastructure</CardTitle>
-                    <CardDescription className="text-lg">AWS expertise for scalable solutions</CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Leverage my AWS experience to build cloud-native applications that scale automatically, 
-                  reduce costs, and improve reliability.
-                </p>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>• AWS Architecture</div>
-                  <div>• Serverless Solutions</div>
-                  <div>• Container Orchestration</div>
-                  <div>• CI/CD Pipelines</div>
-                  <div>• Database Migration</div>
-                  <div>• Security & Compliance</div>
-                  <div>• Cost Optimization</div>
-                  <div>• Performance Monitoring</div>
-                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground text-left">
+                  <li className="font-semibold">• Process automation & workflows</li>
+                  <li className="font-semibold">• AI chatbots & virtual assistants</li>
+                  <li className="font-semibold">• Data analysis & reporting tools</li>
+                  <li className="font-semibold">• Integration with existing systems</li>
+                </ul>
               </CardContent>
             </Card>
           </div>

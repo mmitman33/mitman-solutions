@@ -30,10 +30,10 @@ export default function About() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <Image
-                  src="/images/mitman-solutions-transparent.png"
+                  src="/images/icon-only-large.png"
                   alt="Mitman Solutions"
-                  width={350}
-                  height={350}
+                  width={300}
+                  height={300}
                   className="object-contain drop-shadow-2xl animate-float"
                   priority
                 />

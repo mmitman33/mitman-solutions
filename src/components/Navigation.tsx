@@ -10,13 +10,13 @@ export function Navigation() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/mitman-solutions-transparent.png"
+            src="/images/icon-only-large.png"
             alt="Mitman Solutions Logo"
-            width={45}
-            height={45}
-            className="object-contain"
+            width={55}
+            height={55}
+            className="object-contain hover:scale-110 transition-transform duration-300"
           />
-          <span className="font-bold text-xl">Mitman Solutions</span>
+          <span className="font-extrabold text-xl">Mitman Solutions</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-6">

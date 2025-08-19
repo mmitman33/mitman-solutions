@@ -147,12 +147,12 @@ export default function Home() {
             </div>
             
             <div className="pt-4">
-              <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-muted-foreground">
-                <span>🏆 AWS Experience</span>
-                <span className="hidden sm:inline">•</span>
-                <span>🎓 Dartmouth Grad</span>
-                <span className="hidden sm:inline">•</span>
-                <span>📍 Wisconsin Based</span>
+              <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-foreground">
+                <span className="font-extrabold">🏆 7+ years AWS Experience</span>
+                <span className="hidden sm:inline font-extrabold">•</span>
+                <span className="font-extrabold">👨🏼‍💻 End-to-end Designer</span>
+                <span className="hidden sm:inline font-extrabold">•</span>
+                <span className="font-extrabold">📍 Wisconsin Based</span>
               </div>
             </div>
           </div>
