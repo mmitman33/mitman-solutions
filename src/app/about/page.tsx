@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 export default function About() {
   return (
@@ -47,15 +48,15 @@ export default function About() {
       {/* Experience Section */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Why Your Business Can <span className="text-primary font-extrabold">Trust</span> Our Expertise
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our solutions are backed by experience building enterprise-scale systems that serve millions of users. 
-              We bring that same level of reliability and performance to your business.
-            </p>
-          </div>
+                  <ScrollAnimation className="text-center space-y-4 mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+            Why Your Business Can <span className="text-primary font-extrabold">Trust</span> Our Expertise
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Our solutions are backed by experience building enterprise-scale systems that serve millions of users.
+            We bring that same level of reliability and performance to your business.
+          </p>
+        </ScrollAnimation>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift">

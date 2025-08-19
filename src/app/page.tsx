@@ -61,9 +61,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift group text-center">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="text-white font-bold text-2xl">🛒</span>
-                </div>
+                            <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <span className="text-blue-600 font-bold text-2xl">🛒</span>
+            </div>
                 <CardTitle className="text-xl text-foreground">E-commerce Platforms</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Online stores that convert visitors into customers
@@ -81,9 +81,9 @@ export default function Home() {
 
             <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift group text-center">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="text-white font-bold text-2xl">⚡</span>
-                </div>
+                            <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <span className="text-green-600 font-bold text-2xl">⚡</span>
+            </div>
                 <CardTitle className="text-xl text-foreground">Custom Software</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Web applications built for your specific needs
@@ -101,9 +101,9 @@ export default function Home() {
 
             <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift group text-center">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="text-white font-bold text-2xl">🤖</span>
-                </div>
+                            <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <span className="text-purple-600 font-bold text-2xl">🤖</span>
+            </div>
                 <CardTitle className="text-xl text-foreground">AI Integrations</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Smart automation for better business decisions
@@ -135,10 +135,10 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <Button size="lg" className="hover-lift flex-1" asChild>
+              <Button size="lg" className="hover-lift flex-1 h-12 sm:h-auto" asChild>
                 <a href="tel:414-526-6926">Call (414) 526-6926</a>
               </Button>
-              <Button size="lg" variant="outline" className="hover-lift flex-1" asChild>
+              <Button size="lg" variant="outline" className="hover-lift flex-1 h-12 sm:h-auto" asChild>
                 <Link href="/contact">Send Message</Link>
               </Button>
             </div>

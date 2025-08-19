@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 export default function Services() {
   return (
@@ -38,22 +39,32 @@ export default function Services() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center">
-              <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Image
-                    src="/images/icon-only-large.png"
-                    alt="Launch Icon"
-                    width={40}
-                    height={40}
-                    className="object-contain filter brightness-0 invert"
-                  />
-                </div>
-                <CardTitle className="text-xl text-foreground font-extrabold">🚀 Launching</CardTitle>
-                <CardDescription className="text-lg">
-                  Got a product idea or starting a new business?
-                </CardDescription>
-              </CardHeader>
+                    <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center animate-on-scroll stagger-animation" style={{"--stagger-delay": "0.1s"} as React.CSSProperties}>
+          <CardHeader>
+            <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mx-auto mb-4 animate-rocket">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-green-600"
+              >
+                <path
+                  d="M20 5L25 15H35L27 21L30 32L20 26L10 32L13 21L5 15H15L20 5Z"
+                  fill="currentColor"
+                  className="animate-pulse"
+                />
+                <circle cx="20" cy="35" r="2" fill="currentColor" opacity="0.7" />
+                <circle cx="15" cy="37" r="1.5" fill="currentColor" opacity="0.5" />
+                <circle cx="25" cy="37" r="1.5" fill="currentColor" opacity="0.5" />
+              </svg>
+            </div>
+            <CardTitle className="text-xl text-foreground font-extrabold">🚀 Launching</CardTitle>
+            <CardDescription className="text-lg">
+              Got a product idea or starting a new business?
+            </CardDescription>
+          </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   <strong className="text-foreground font-extrabold">We&apos;ll bring your vision to life.</strong> From MVP development to full product launches, 
@@ -68,22 +79,30 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift text-center">
-              <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Image
-                    src="/images/icon-only-large.png"
-                    alt="Scale Icon"
-                    width={40}
-                    height={40}
-                    className="object-contain filter brightness-0 invert"
-                  />
-                </div>
-                <CardTitle className="text-xl text-foreground font-extrabold">📈 Scaling</CardTitle>
-                <CardDescription className="text-lg">
-                  Growing fast and hitting technical limits?
-                </CardDescription>
-              </CardHeader>
+                    <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift text-center animate-on-scroll stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
+          <CardHeader>
+            <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mx-auto mb-4 animate-growth">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-blue-600"
+              >
+                <rect x="8" y="25" width="4" height="10" fill="currentColor" />
+                <rect x="14" y="20" width="4" height="15" fill="currentColor" />
+                <rect x="20" y="15" width="4" height="20" fill="currentColor" />
+                <rect x="26" y="10" width="4" height="25" fill="currentColor" />
+                <rect x="32" y="5" width="4" height="30" fill="currentColor" />
+                <path d="M28 12L32 8L36 12" stroke="currentColor" strokeWidth="2" fill="none" />
+              </svg>
+            </div>
+            <CardTitle className="text-xl text-foreground font-extrabold">📈 Scaling</CardTitle>
+            <CardDescription className="text-lg">
+              Growing fast and hitting technical limits?
+            </CardDescription>
+          </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   <strong className="text-foreground font-extrabold">We&apos;ll help you scale without breaking.</strong> Enterprise-grade infrastructure and 
@@ -98,22 +117,29 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center">
-              <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Image
-                    src="/images/icon-only-large.png"
-                    alt="Streamline Icon"
-                    width={40}
-                    height={40}
-                    className="object-contain filter brightness-0 invert"
-                  />
-                </div>
-                <CardTitle className="text-xl text-foreground font-extrabold">⚡ Streamlining</CardTitle>
-                <CardDescription className="text-lg">
-                  Manual processes slowing you down?
-                </CardDescription>
-              </CardHeader>
+                    <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift text-center animate-on-scroll stagger-animation" style={{"--stagger-delay": "0.3s"} as React.CSSProperties}>
+          <CardHeader>
+            <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center mx-auto mb-4 overflow-hidden">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-purple-600"
+              >
+                <path d="M5 15h10v2H5z" fill="currentColor" className="animate-streamline" />
+                <path d="M5 20h14v2H5z" fill="currentColor" className="animate-streamline" style={{"animationDelay": "0.5s"} as React.CSSProperties} />
+                <path d="M5 25h8v2H5z" fill="currentColor" className="animate-streamline" style={{"animationDelay": "1s"} as React.CSSProperties} />
+                <circle cx="30" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
+                <path d="M27 20l2 2 4-4" stroke="currentColor" strokeWidth="2" fill="none" />
+              </svg>
+            </div>
+            <CardTitle className="text-xl text-foreground font-extrabold">⚡ Streamlining</CardTitle>
+            <CardDescription className="text-lg">
+              Manual processes slowing you down?
+            </CardDescription>
+          </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   <strong className="text-foreground font-extrabold">We&apos;ll automate what matters.</strong> Custom tools and AI integration to eliminate 
@@ -134,12 +160,12 @@ export default function Services() {
       {/* Consulting Services */}
       <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technology Consulting</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Beyond development, I provide strategic guidance to help you make the right technology decisions.
             </p>
-          </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="text-center hover:shadow-lg transition-shadow">
