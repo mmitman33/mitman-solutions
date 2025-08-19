@@ -1,4 +1,20 @@
+# Mitman Solutions
+
+Professional software consulting and freelancing services for modern businesses.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Email Setup
+
+This project uses Resend for email functionality. To set up email sending:
+
+1. Sign up for a free account at [Resend](https://resend.com)
+2. Get your API key from the dashboard
+3. Create a `.env.local` file in the root directory with:
+   ```
+   RESEND_API_KEY=your_resend_api_key_here
+   ```
+4. For production on Vercel, add the `RESEND_API_KEY` environment variable in your Vercel project settings
 
 ## Getting Started
 
