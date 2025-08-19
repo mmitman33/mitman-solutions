@@ -121,7 +121,7 @@ export default function About() {
                 <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-4">
                     Strong foundation in computer science fundamentals, algorithms, 
-                    and software engineering principles from Dartmouth College.  I'm not just a coder, I'm a problem solver.
+                    and software engineering principles from Dartmouth College.  I&apos;m not just a coder, I&apos;m a problem solver.
                   </p>
                 </CardContent>
               </Card>
@@ -190,7 +190,7 @@ export default function About() {
               Our <span className="text-primary font-extrabold">Commitment</span> to Your Success
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              I&apos;,m dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
+              I&apos;m dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
               Your success is my primary focus, and I measure my value by the growth you achieve.
             </p>
             

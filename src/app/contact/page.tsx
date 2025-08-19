@@ -303,7 +303,7 @@ export default function Contact() {
                   <p className="text-muted-foreground">
                     <strong>Based in Wisconsin</strong><br/>
                     Working with businesses across the United States<br/>
-                    Remote collaboration & on-site consulting available
+                    Remote collaboration &amp; on-site consulting available
                   </p>
                 </CardContent>
               </Card>
