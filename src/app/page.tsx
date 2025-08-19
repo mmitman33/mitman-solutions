@@ -54,7 +54,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              What We <span className="text-primary font-extrabold text-shadow">Deliver</span>
+              What We <span className="text-primary font-extrabold">Deliver</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Three core areas where technology transforms your business
@@ -131,7 +131,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Ready to <span className="text-primary font-extrabold text-shadow">Get Started</span>?
+              Ready to <span className="text-primary font-extrabold">Get Started</span>?
             </h2>
             <p className="text-lg text-muted-foreground">
               Let&apos;s discuss your project and see how we can help modernize your business.
@@ -148,11 +148,11 @@ export default function Home() {
             
             <div className="pt-4">
               <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-foreground">
-                <span className="font-extrabold">🏆 7+ years AWS Experience</span>
+                <span>🏆 7+ years AWS Experience</span>
                 <span className="hidden sm:inline font-extrabold">•</span>
-                <span className="font-extrabold">👨🏼‍💻 End-to-end Designer</span>
+                <span>👨🏼‍💻 End-to-end Designer</span>
                 <span className="hidden sm:inline font-extrabold">•</span>
-                <span className="font-extrabold">📍 Wisconsin Based</span>
+                <span>📍 Wisconsin Based</span>
               </div>
             </div>
           </div>

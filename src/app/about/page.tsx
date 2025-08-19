@@ -12,7 +12,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
-                How We <span className="text-primary font-extrabold text-shadow">Transform</span> Your Business
+                How We <span className="text-primary font-extrabold">Transform</span> Your Business
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Mitman Solutions brings enterprise-grade engineering expertise to modernize your technology stack, 
@@ -49,7 +49,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Why Your Business Can <span className="text-primary font-extrabold text-shadow">Trust</span> Our Expertise
+              Why Your Business Can <span className="text-primary font-extrabold">Trust</span> Our Expertise
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Our solutions are backed by experience building enterprise-scale systems that serve millions of users. 
@@ -172,7 +172,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Our <span className="text-primary font-extrabold text-shadow">Commitment</span> to Your Success
+              Our <span className="text-primary font-extrabold">Commitment</span> to Your Success
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
               We&apos;re dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
