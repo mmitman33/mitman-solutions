@@ -19,7 +19,7 @@ export default function About() {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center space-y-8">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight animate-fade-in">
-                How I Will <span className="text-primary font-extrabold">Transform</span> Your Business
+                How We'll <span className="text-primary font-extrabold">Transform</span> Your Business
               </h1>
             
             <ScrollAnimation>
@@ -37,7 +37,7 @@ export default function About() {
       {/* Experience Section */}
       <section className="py-20 lg:py-24">
         <div className="container mx-auto px-4">
-                  <ScrollAnimation className="text-center space-y-4 mb-12">
+        <ScrollAnimation className="text-center space-y-4 mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
             Why Your Business Can <span className="text-primary font-extrabold">Trust</span> My Expertise
           </h2>

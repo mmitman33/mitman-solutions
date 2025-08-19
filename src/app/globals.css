@@ -285,34 +285,45 @@
 
 
       .animate-on-scroll {
-        opacity: 0 !important;
+        opacity: 0;
         transform: translateY(30px);
         transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
         will-change: opacity, transform;
         backface-visibility: hidden;
-        visibility: hidden;
       }
 
       .animate-on-scroll.animate-in {
-        opacity: 1 !important;
+        opacity: 1;
         transform: translateY(0);
-        visibility: visible;
       }
 
       .stagger-animation {
-        opacity: 0 !important;
+        opacity: 0;
         transform: translateY(30px) scale(0.98);
         transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: var(--stagger-delay, 0s);
         will-change: transform, opacity;
         backface-visibility: hidden;
-        visibility: hidden;
       }
 
       .stagger-animation.animate-in {
-        opacity: 1 !important;
+        opacity: 1;
         transform: translateY(0) scale(1);
-        visibility: visible;
+      }
+
+      /* Mobile fallback - show content if animations don't trigger */
+      @media (max-width: 768px) {
+        .animate-on-scroll:not(.animate-in) {
+          opacity: 1;
+          transform: translateY(0);
+          visibility: visible;
+        }
+        
+        .stagger-animation:not(.animate-in) {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          visibility: visible;
+        }
       }
 
       .stagger-animation.animate-complete {

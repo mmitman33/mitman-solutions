@@ -57,11 +57,7 @@ export function ScrollAnimation({ children, className = "", style }: ScrollAnima
     <div 
       ref={elementRef} 
       className={`animate-on-scroll ${className}`} 
-      style={{
-        ...style,
-        opacity: 0,
-        visibility: 'hidden'
-      }}
+      style={style}
     >
       {children}
     </div>
