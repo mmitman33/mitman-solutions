@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 via-background to-blue-50/30 py-16 lg:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary/5 via-background to-blue-50/30 py-12 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial opacity-50"></div>
         <div className="container mx-auto px-4 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -20,7 +20,7 @@ export default function Home() {
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Transform your operations with custom software solutions, e-commerce, and AI integration. 
-                <strong className="text-foreground">Built for growth, designed for results.</strong>
+                <strong className="text-foreground"> Built for growth, designed for results.</strong>
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <Button size="lg" className="hover-lift text-base px-8" asChild>
@@ -38,7 +38,7 @@ export default function Home() {
                   alt="Mitman Solutions"
                   width={600}
                   height={600}
-                  className="object-contain drop-shadow-2xl animate-float w-96 h-96 sm:w-[400px] sm:h-[400px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px]"
+                  className="object-contain drop-shadow-2xl animate-float w-80 h-80 sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px] xl:w-[480px] xl:h-[480px]"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
@@ -50,15 +50,12 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-12">
+          <div className="text-center space-y-4 mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
               What We <span className="text-primary font-extrabold">Deliver</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Three core areas where technology transforms your business
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -67,7 +64,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-2xl">🛒</span>
                 </div>
-                <CardTitle className="text-xl text-foreground">E-commerce Solutions</CardTitle>
+                <CardTitle className="text-xl text-foreground">E-commerce Platforms</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Online stores that convert visitors into customers
                 </CardDescription>
@@ -107,7 +104,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-2xl">🤖</span>
                 </div>
-                <CardTitle className="text-xl text-foreground">AI Integration</CardTitle>
+                <CardTitle className="text-xl text-foreground">AI Integrations</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Smart automation for better business decisions
                 </CardDescription>

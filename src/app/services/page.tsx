@@ -15,8 +15,8 @@ export default function Services() {
               <span className="text-primary block font-extrabold">Launching • Scaling • Streamlining</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              From new product ideas to growing businesses to operational efficiency - 
-              <strong className="text-foreground font-extrabold">we deliver the technology solutions you need to succeed.</strong>
+              From new product ideas to growing businesses to operational efficiency.
+              <strong className="text-foreground font-extrabold">  We deliver the technology solutions you need to succeed.</strong>
             </p>
             <Button size="lg" className="hover-lift" asChild>
               <Link href="/contact">Let&apos;s Talk About Your Needs</Link>

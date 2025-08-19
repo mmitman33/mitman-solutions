@@ -227,30 +227,7 @@ This message was sent from the Mitman Solutions contact form.`);
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
-                        <span className="text-red-600 font-bold text-xl">🎙️</span>
-                      </div>
-                      <div>
-                        <CardTitle>Podcast</CardTitle>
-                        <CardDescription>The Rest Period Podcast</CardDescription>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <Button variant="outline" className="w-full" asChild>
-                      <a 
-                        href="https://rest-period.com" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Listen Now
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
+
               </div>
 
               {/* Location */}
@@ -321,7 +298,7 @@ This message was sent from the Mitman Solutions contact form.`);
               <CardContent>
                 <p className="text-muted-foreground">
                   I specialize in modern web technologies (React, Next.js, Node.js) and cloud platforms (AWS), 
-                  AI integration, and e-commerce solutions. My 7+ years of industry experience (AWS, Opendoor) ensures enterprise-grade scalability.
+                  AI integration, and e-commerce solutions. In my 7+ years of industry experience (AWS, Opendoor, MVP Tactical) I've delivered enterprise-grade products for any scale business.
                 </p>
               </CardContent>
             </Card>
@@ -332,8 +309,8 @@ This message was sent from the Mitman Solutions contact form.`);
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes! I offer various support packages including bug fixes, feature updates, performance monitoring, 
-                  and technical consultation to ensure your solution continues to meet your evolving needs.
+                  Yes! I offer various support packages including maintenance, feature updates, performance monitoring, 
+                  and technical consultation to ensure your products continue to meet your evolving needs.
                 </p>
               </CardContent>
             </Card>
@@ -351,14 +328,6 @@ This message was sent from the Mitman Solutions contact form.`);
             <p className="text-xl text-muted-foreground">
               Let&apos;s start the conversation and see how technology can drive your success.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <a href="mailto:mitman.solutions@gmail.com">Send Email</a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:414-526-6926">Call Now</a>
-              </Button>
-            </div>
           </div>
         </div>
       </section>

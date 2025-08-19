@@ -72,13 +72,12 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground">What this means for you:</strong> Your applications get the same reliability and scalability that powers millions of AWS customers. We build systems that grow with your business without breaking.
+                  <strong className="text-foreground">What this means for you:</strong> Leverage solutions that power millions of AWS customers. We'll build systems that grow with your business without breaking.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Cloud infrastructure that scales automatically</li>
-                  <li>• High-availability systems with 99.9% uptime</li>
-                  <li>• Security practices from enterprise environments</li>
-                  <li>• Performance optimization for any scale</li>
+                  <li>• Designed and operated best-in-class Cloud services for 7+ years</li>
+                  <li>• Security best practices from enterprise environments</li>
+                  <li>• Performance and cost optimizations for any size business</li>
                 </ul>
               </CardContent>
             </Card>
@@ -97,13 +96,12 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground">What this means for you:</strong> We understand how to build software that real people actually want to use. Your customers will love the intuitive experiences we create.
+                  <strong className="text-foreground">What this means for you:</strong> We understand how to build software that people actually want to use. Your customers will love the intuitive experiences we create.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• User-centered design that converts visitors</li>
                   <li>• Data-driven insights for better decisions</li>
                   <li>• Seamless integrations with existing systems</li>
-                  <li>• Mobile-first experiences that work everywhere</li>
                 </ul>
               </CardContent>
             </Card>
@@ -133,12 +131,12 @@ export default function About() {
                   <span className="text-purple-600 font-bold text-xl">📱</span>
                 </div>
                 <CardTitle>Patent Holder</CardTitle>
-                <CardDescription>Mobile Virtual Player Technology</CardDescription>
+                <CardDescription>Mobile Virtual Player Tactical</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Inventor and patent holder for innovative mobile virtual player technology, 
-                  demonstrating a track record of creating cutting-edge solutions.
+                  Co-inventor and patent holder for the MVP Tactical HEKTR system, 
+                  demonstrating a track record of creativity and cutting-edge problem solving.
                 </p>
               </CardContent>
             </Card>
@@ -154,11 +152,11 @@ export default function About() {
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   Host of The Rest Period Podcast, sharing insights on technology, 
-                  entrepreneurship, and business strategy.
+                  entrepreneurship, and business strategy.  And just having fun.
                 </p>
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://rest-period.com" target="_blank" rel="noopener noreferrer">
-                    Listen Now
+                    See What We're Building
                   </a>
                 </Button>
               </CardContent>
