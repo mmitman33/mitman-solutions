@@ -72,7 +72,7 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground">What this means for you:</strong> Leverage solutions that power millions of AWS customers. We'll build systems that grow with your business without breaking.
+                  <strong className="text-foreground">What this means for you:</strong> Leverage solutions that power millions of AWS customers. We&apos;ll build systems that grow with your business without breaking.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Designed and operated best-in-class Cloud services for 7+ years</li>
@@ -156,7 +156,7 @@ export default function About() {
                 </p>
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://rest-period.com" target="_blank" rel="noopener noreferrer">
-                    See What We're Building
+                    See What We&apos;re Building
                   </a>
                 </Button>
               </CardContent>

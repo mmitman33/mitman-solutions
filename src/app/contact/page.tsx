@@ -298,7 +298,7 @@ This message was sent from the Mitman Solutions contact form.`);
               <CardContent>
                 <p className="text-muted-foreground">
                   I specialize in modern web technologies (React, Next.js, Node.js) and cloud platforms (AWS), 
-                  AI integration, and e-commerce solutions. In my 7+ years of industry experience (AWS, Opendoor, MVP Tactical) I've delivered enterprise-grade products for any scale business.
+                  AI integration, and e-commerce solutions. In my 7+ years of industry experience (AWS, Opendoor, MVP Tactical) I&apos;ve delivered enterprise-grade products for any scale business.
                 </p>
               </CardContent>
             </Card>
