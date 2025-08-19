@@ -5,7 +5,9 @@ export const runtime = 'edge'
 export async function GET() {
   // Fetch the image data
   const imageUrl = 'https://mitman-solutions.com/images/icon-only-large.png'
-  const imageData = await fetch(imageUrl).then((res) => res.arrayBuffer())
+  const imageResponse = await fetch(imageUrl)
+  const imageData = await imageResponse.arrayBuffer()
+  const imageBlob = new Blob([imageData], { type: 'image/png' })
   
   return new ImageResponse(
     (
@@ -30,7 +32,7 @@ export async function GET() {
           }}
         >
           <img
-            src={imageData as any}
+            src={imageBlob}
             alt="Mitman Solutions"
             width="200"
             height="200"
