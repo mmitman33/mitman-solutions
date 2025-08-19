@@ -2,34 +2,45 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-blue-50/30 py-12 lg:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-radial opacity-50"></div>
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-green-400/10 rounded-full blur-2xl animate-pulse" style={{"animationDelay": "1s"} as React.CSSProperties}></div>
+        </div>
+        
         <div className="container mx-auto px-4 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-balance">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-balance animate-fade-in">
                 <span className="text-primary font-extrabold">Modernize</span> Your Business
                 <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 text-foreground">
                   with Smart Technology
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Transform your operations with custom software solutions, e-commerce, and AI integration. 
-                <strong className="text-foreground"> Built for growth, designed for results.</strong>
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <Button size="lg" className="hover-lift text-base px-8" asChild>
-                  <Link href="/contact">Get Started</Link>
-                </Button>
-                <Button size="lg" variant="outline" className="hover-lift text-base px-8" asChild>
-                  <Link href="/about">Learn More</Link>
-                </Button>
-              </div>
+              <ScrollAnimation>
+                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Transform your operations with custom software solutions, e-commerce, and AI integration. 
+                  <strong className="text-foreground"> Built for growth, designed for results.</strong>
+                </p>
+              </ScrollAnimation>
+              <ScrollAnimation>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                  <Button size="lg" className="hover-lift text-base px-8 animate-slide-up" asChild>
+                    <Link href="/contact">Get Started</Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="hover-lift text-base px-8 animate-slide-up" style={{"animationDelay": "0.2s"} as React.CSSProperties} asChild>
+                    <Link href="/about">Learn More</Link>
+                  </Button>
+                </div>
+              </ScrollAnimation>
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="relative animate-fade-in">
@@ -52,14 +63,15 @@ export default function Home() {
       {/* What We Do Section */}
       <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-8">
+          <ScrollAnimation className="text-center space-y-4 mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
               What We <span className="text-primary font-extrabold">Deliver</span>
             </h2>
-          </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift group text-center">
+            <ScrollAnimation>
+              <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift group text-center stagger-animation" style={{"--stagger-delay": "0.1s"} as React.CSSProperties}>
               <CardHeader>
                             <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
               <span className="text-blue-600 font-bold text-2xl">🛒</span>
@@ -77,9 +89,11 @@ export default function Home() {
                   <Link href="/services">View Details</Link>
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift group text-center">
+            <ScrollAnimation>
+              <Card className="border-2 border-primary/30 hover:border-primary/50 transition-all duration-300 hover-lift group text-center stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
               <CardHeader>
                             <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
               <span className="text-green-600 font-bold text-2xl">⚡</span>
@@ -97,9 +111,11 @@ export default function Home() {
                   <Link href="/contact">Start Project</Link>
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift group text-center">
+            <ScrollAnimation>
+              <Card className="border-2 hover:border-primary/50 transition-all duration-300 hover-lift group text-center stagger-animation" style={{"--stagger-delay": "0.3s"} as React.CSSProperties}>
               <CardHeader>
                             <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
               <span className="text-purple-600 font-bold text-2xl">🤖</span>
@@ -117,7 +133,8 @@ export default function Home() {
                   <Link href="/about">Learn More</Link>
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -127,31 +144,39 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-radial opacity-50"></div>
         <div className="container mx-auto px-4 text-center relative">
           <div className="max-w-3xl mx-auto space-y-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Ready to <span className="text-primary font-extrabold">Get Started</span>?
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Let&apos;s discuss your project and see how we can help modernize your business.
-            </p>
+            <ScrollAnimation>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+                Ready to <span className="text-primary font-extrabold">Get Started</span>?
+              </h2>
+            </ScrollAnimation>
+            <ScrollAnimation>
+              <p className="text-lg text-muted-foreground">
+                Let&apos;s discuss your project and see how we can help modernize your business.
+              </p>
+            </ScrollAnimation>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <Button size="lg" className="hover-lift flex-1 h-14 sm:h-16 py-4 text-base font-semibold" asChild>
-                <a href="tel:414-526-6926">Call (414) 526-6926</a>
-              </Button>
-              <Button size="lg" variant="outline" className="hover-lift flex-1 h-14 sm:h-16 py-4 text-base font-semibold" asChild>
-                <Link href="/contact">Send Message</Link>
-              </Button>
-            </div>
-            
-            <div className="pt-4">
-              <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-foreground">
-                <span>🏆 7+ years AWS Experience</span>
-                <span className="hidden sm:inline font-extrabold">•</span>
-                <span>👨🏼‍💻 End-to-end Designer</span>
-                <span className="hidden sm:inline font-extrabold">•</span>
-                <span>📍 Wisconsin Based</span>
+            <ScrollAnimation>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                <Button size="lg" className="hover-lift flex-1 h-14 sm:h-16 py-4 text-base font-semibold animate-slide-up" asChild>
+                  <a href="tel:414-526-6926">Call (414) 526-6926</a>
+                </Button>
+                <Button size="lg" variant="outline" className="hover-lift flex-1 h-14 sm:h-16 py-4 text-base font-semibold animate-slide-up" style={{"animationDelay": "0.2s"} as React.CSSProperties} asChild>
+                  <Link href="/contact">Send Message</Link>
+                </Button>
               </div>
-            </div>
+            </ScrollAnimation>
+            
+            <ScrollAnimation>
+              <div className="pt-4">
+                <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-foreground">
+                  <span>🏆 7+ years AWS Experience</span>
+                  <span className="hidden sm:inline font-extrabold">•</span>
+                  <span>👨🏼‍💻 End-to-end Designer</span>
+                  <span className="hidden sm:inline font-extrabold">•</span>
+                  <span>📍 Wisconsin Based</span>
+                </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>

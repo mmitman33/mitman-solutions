@@ -8,20 +8,31 @@ export default function Services() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-purple-50/20 py-16 lg:py-24">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-br from-primary/10 via-background to-purple-50/20 py-16 lg:py-24 overflow-hidden relative">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl animate-pulse-slow"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-purple-400/10 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-green-400/10 rounded-full blur-xl animate-pulse" style={{"animationDelay": "1.5s"} as React.CSSProperties}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative">
           <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance animate-fade-in">
               We&apos;re Here to Help Whether You&apos;re
               <span className="text-primary block font-extrabold">Launching • Scaling • Streamlining</span>
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Whether you are working on a new product idea, growing your businesses or optimizing operations.
-              <strong className="text-foreground font-extrabold">  We deliver the technology solutions you need to succeed.</strong>
-            </p>
-            <Button size="lg" className="hover-lift" asChild>
-              <Link href="/contact">Let&apos;s Talk About Your Needs</Link>
-            </Button>
+            <ScrollAnimation>
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                Whether you are working on a new product idea, growing your businesses or optimizing operations.
+                <strong className="text-foreground font-extrabold">  We deliver the technology solutions you need to succeed.</strong>
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation>
+              <Button size="lg" className="hover-lift animate-slide-up" asChild>
+                <Link href="/contact">Let&apos;s Talk About Your Needs</Link>
+              </Button>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -29,14 +40,14 @@ export default function Services() {
       {/* Core Services */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-12">
+          <ScrollAnimation className="text-center space-y-4 mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
               Three Ways We <span className="text-primary font-extrabold">Help You Win</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Whether you&apos;re starting fresh, growing fast, or optimizing operations
             </p>
-          </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <ScrollAnimation>
@@ -174,7 +185,8 @@ export default function Services() {
           </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <ScrollAnimation>
+              <Card className="text-center hover:shadow-lg transition-shadow stagger-animation" style={{"--stagger-delay": "0.1s"} as React.CSSProperties}>
               <CardHeader>
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-blue-600 font-bold text-2xl">🎯</span>
@@ -186,9 +198,11 @@ export default function Services() {
                   Align your technical investments with business goals and create a roadmap for digital transformation.
                 </p>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <ScrollAnimation>
+              <Card className="text-center hover:shadow-lg transition-shadow stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
               <CardHeader>
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-green-600 font-bold text-2xl">🏗️</span>
@@ -200,9 +214,11 @@ export default function Services() {
                   Evaluate existing systems and design scalable systems to support future growth.
                 </p>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <ScrollAnimation>
+              <Card className="text-center hover:shadow-lg transition-shadow stagger-animation" style={{"--stagger-delay": "0.3s"} as React.CSSProperties}>
               <CardHeader>
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-purple-600 font-bold text-2xl">👥</span>
@@ -214,9 +230,11 @@ export default function Services() {
                   Level up your team with best practices, system designs, code reviews, and technical leadership.
                 </p>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <ScrollAnimation>
+              <Card className="text-center hover:shadow-lg transition-shadow stagger-animation" style={{"--stagger-delay": "0.4s"} as React.CSSProperties}>
               <CardHeader>
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-red-600 font-bold text-2xl">⚡</span>
@@ -228,7 +246,8 @@ export default function Services() {
                   Identify bottlenecks and optimize applications for speed, scalability, and cost-effectiveness.
                 </p>
               </CardContent>
-            </Card>
+              </Card>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -236,15 +255,16 @@ export default function Services() {
       {/* Process Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Our Process</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A proven methodology that ensures your project is delivered on time, within budget, and exceeds expectations.
             </p>
-          </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center space-y-4">
+            <ScrollAnimation>
+              <div className="text-center space-y-4 stagger-animation" style={{"--stagger-delay": "0.1s"} as React.CSSProperties}>
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
                 <span className="text-blue-600 font-bold text-2xl">1</span>
               </div>
@@ -252,9 +272,11 @@ export default function Services() {
               <p className="text-muted-foreground">
                 Deep dive into your business goals, technical requirements, and customer needs to create a comprehensive project plan.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center space-y-4">
+            <ScrollAnimation>
+              <div className="text-center space-y-4 stagger-animation" style={{"--stagger-delay": "0.2s"} as React.CSSProperties}>
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
                 <span className="text-green-600 font-bold text-2xl">2</span>
               </div>
@@ -262,9 +284,11 @@ export default function Services() {
               <p className="text-muted-foreground">
                 Create detailed technical specifications, user experience designs, and scalable architecture blueprints.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center space-y-4">
+            <ScrollAnimation>
+              <div className="text-center space-y-4 stagger-animation" style={{"--stagger-delay": "0.3s"} as React.CSSProperties}>
               <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
                 <span className="text-purple-600 font-bold text-2xl">3</span>
               </div>
@@ -272,9 +296,11 @@ export default function Services() {
               <p className="text-muted-foreground">
                 Build your solution using modern development practices with continuous integration and comprehensive testing.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center space-y-4">
+            <ScrollAnimation>
+              <div className="text-center space-y-4 stagger-animation" style={{"--stagger-delay": "0.4s"} as React.CSSProperties}>
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto">
                 <span className="text-red-600 font-bold text-2xl">4</span>
               </div>
@@ -282,7 +308,8 @@ export default function Services() {
               <p className="text-muted-foreground">
                 Deploy your solution with monitoring and provide ongoing support to ensure continued success and growth.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -291,20 +318,26 @@ export default function Services() {
       <section className="bg-gradient-to-r from-primary/10 to-blue-50/30 py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Let&apos;s discuss how we can leverage technology to accelerate your business goals and create a lasting competitive advantage.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <Link href="/contact">Schedule a Consultation</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:414-526-6926">Call (414) 526-6926</a>
-              </Button>
-            </div>
+            <ScrollAnimation>
+              <h2 className="text-3xl lg:text-4xl font-bold">
+                Ready to Transform Your Business?
+              </h2>
+            </ScrollAnimation>
+            <ScrollAnimation>
+              <p className="text-xl text-muted-foreground">
+                Let&apos;s discuss how we can leverage technology to accelerate your business goals and create a lasting competitive advantage.
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="animate-slide-up" asChild>
+                  <Link href="/contact">Schedule a Consultation</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="animate-slide-up" style={{"animationDelay": "0.2s"} as React.CSSProperties} asChild>
+                  <a href="tel:414-526-6926">Call (414) 526-6926</a>
+                </Button>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
