@@ -28,7 +28,7 @@ export default function Services() {
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 Working on a new product? Growing your business? Optimizing operations?
-                <strong className="text-foreground font-extrabold"> We'll deliver software that your customers will love.</strong>
+                <strong className="text-foreground font-extrabold"> We&apos;ll deliver software that your customers will love.</strong>
               </p>
               <Button size="lg" className="hover-lift text-base px-8" asChild>
                 <Link href="/contact">Get in Touch</Link>
@@ -83,7 +83,7 @@ export default function Services() {
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   <strong className="text-foreground font-extrabold">I&apos;ll bring your vision to life.</strong> From MVP development to full product launches, 
-                  I'll handle the technical complexity so you can focus on your customers.
+                  I&apos;ll handle the technical complexity so you can focus on your customers.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
                   <li className="font-semibold">• MVP & prototype development</li>

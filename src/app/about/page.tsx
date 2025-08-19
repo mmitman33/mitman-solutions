@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -66,7 +65,7 @@ export default function About() {
                 </CardHeader>
               <CardContent className="relative z-10">
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground">What this means for you:</strong> I'll leverage solutions that power millions of AWS customers, building systems that grow with your business without breaking.
+                  <strong className="text-foreground">What this means for you:</strong> I&apos;ll leverage solutions that power millions of AWS customers, building systems that grow with your business without breaking.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Designed and operated best-in-class AWS services for 7+ years</li>
