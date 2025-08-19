@@ -13,7 +13,7 @@ export async function GET() {
     (
       <div
         style={{
-          background: 'white',
+          background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
