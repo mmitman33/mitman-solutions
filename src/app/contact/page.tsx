@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,26 +41,17 @@ This message was sent from the Mitman Solutions contact form.`);
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-green-50/20 py-20 lg:py-32 overflow-hidden relative">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-40 h-40 bg-green-400/10 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-10 right-10 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute top-1/2 left-1/4 w-28 h-28 bg-purple-400/10 rounded-full blur-2xl animate-pulse" style={{"animationDelay": "2s"} as React.CSSProperties}></div>
-        </div>
-        
-        <div className="container mx-auto px-4 text-center relative">
+      <section className="bg-gradient-to-br from-primary/10 via-background to-green-50/20 py-20 lg:py-32">
+        <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight animate-fade-in">
+            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
               Let&apos;s Build Something
               <span className="text-primary block">Amazing</span>
             </h1>
-            <ScrollAnimation>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Ready to accelerate your impact? 
-                Let&apos;s discuss your needs and start shipping products that your customers love.
-              </p>
-            </ScrollAnimation>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Ready to accelerate your impact? 
+              Let&apos;s discuss your needs and start shipping products that your customers love.
+            </p>
           </div>
         </div>
       </section>
@@ -71,16 +61,15 @@ This message was sent from the Mitman Solutions contact form.`);
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <ScrollAnimation>
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold mb-4">Send a Message</h2>
-                  <p className="text-muted-foreground text-lg">
-                    Fill out the form below and I&apos;ll get back to you within 24 hours to discuss your project.
-                  </p>
-                </div>
-                
-                <Card className="hover:shadow-lg transition-shadow duration-300">
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Send a Message</h2>
+                <p className="text-muted-foreground text-lg">
+                  Fill out the form below and I&apos;ll get back to you within 24 hours to discuss your project.
+                </p>
+              </div>
+              
+              <Card>
                 <CardHeader>
                   <CardTitle>Project Inquiry</CardTitle>
                   <CardDescription>
@@ -158,13 +147,11 @@ This message was sent from the Mitman Solutions contact form.`);
                     </Button>
                   </form>
                 </CardContent>
-                </Card>
-              </div>
-            </ScrollAnimation>
+              </Card>
+            </div>
 
             {/* Contact Information */}
-            <ScrollAnimation>
-              <div className="space-y-8">
+            <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
                 <p className="text-muted-foreground text-lg">
@@ -263,9 +250,8 @@ This message was sent from the Mitman Solutions contact form.`);
                     Remote collaboration & on-site consulting available
                   </p>
                 </CardContent>
-                </Card>
-              </div>
-            </ScrollAnimation>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -273,12 +259,12 @@ This message was sent from the Mitman Solutions contact form.`);
       {/* FAQ Section */}
       <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-20">
         <div className="container mx-auto px-4">
-          <ScrollAnimation className="text-center space-y-4 mb-16">
+          <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Frequently Asked Questions</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Get answers to common questions about working with Mitman Solutions.
             </p>
-          </ScrollAnimation>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card>
@@ -336,21 +322,9 @@ This message was sent from the Mitman Solutions contact form.`);
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
-            <ScrollAnimation>
-              <h2 className="text-3xl lg:text-4xl font-bold">
-                Ready to <span className="text-primary font-extrabold">Accelerate</span> Your Business?
-              </h2>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button size="lg" className="animate-slide-up" asChild>
-                  <a href="mailto:mitman.solutions@gmail.com">Start Your Project</a>
-                </Button>
-                <Button size="lg" variant="outline" className="animate-slide-up" style={{"animationDelay": "0.2s"} as React.CSSProperties} asChild>
-                  <a href="tel:414-526-6926">Call Now</a>
-                </Button>
-              </div>
-            </ScrollAnimation>
+            <h2 className="text-3xl lg:text-4xl font-bold">
+              Ready to Accelerate Your Business?
+            </h2>
           </div>
         </div>
       </section>

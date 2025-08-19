@@ -39,6 +39,168 @@ export default function About() {
                 </Button>
               </div>
             </ScrollAnimation>
+
+            {/* Enhanced Transformation Animation */}
+            <ScrollAnimation>
+              <div className="flex justify-center mt-24 mb-20">
+                <div className="relative">
+                  <svg 
+                    width="500" 
+                    height="200" 
+                    viewBox="0 0 500 200" 
+                    className="animate-fade-in"
+                  >
+                    {/* Background Tech Grid */}
+                    <defs>
+                      <pattern id="techGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#3b82f6" strokeWidth="0.5" opacity="0.2" />
+                      </pattern>
+                    </defs>
+                    <rect width="500" height="200" fill="url(#techGrid)" className="animate-pulse" style={{"animationDelay": "0.5s"} as React.CSSProperties} />
+                    
+                    {/* Initial Stick Figure (fades out) */}
+                    <g className="animate-fade-in" style={{"animationDelay": "0.5s"} as React.CSSProperties}>
+                      <g opacity="1">
+                        <animateTransform
+                          attributeName="transform"
+                          type="scale"
+                          values="1;1;0"
+                          dur="4s"
+                          begin="2s"
+                        />
+                        <animate
+                          attributeName="opacity"
+                          values="1;1;0"
+                          dur="4s"
+                          begin="2s"
+                        />
+                        
+                        {/* Basic Stick Figure */}
+                        <circle cx="250" cy="40" r="12" fill="none" stroke="#1f2937" strokeWidth="3" />
+                        <line x1="250" y1="52" x2="250" y2="120" stroke="#1f2937" strokeWidth="3" />
+                        <line x1="250" y1="75" x2="220" y2="90" stroke="#1f2937" strokeWidth="3" />
+                        <line x1="250" y1="75" x2="280" y2="90" stroke="#1f2937" strokeWidth="3" />
+                        <line x1="250" y1="120" x2="225" y2="150" stroke="#1f2937" strokeWidth="3" />
+                        <line x1="250" y1="120" x2="275" y2="150" stroke="#1f2937" strokeWidth="3" />
+                      </g>
+                    </g>
+                    
+                    {/* Transformation Effect */}
+                    <g className="animate-pulse" style={{"animationDelay": "2s"} as React.CSSProperties}>
+                      {/* Energy Burst */}
+                      <circle cx="250" cy="95" r="30" fill="none" stroke="#3b82f6" strokeWidth="2" opacity="0">
+                        <animate attributeName="r" values="0;60;0" dur="2s" begin="2s" />
+                        <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="2s" />
+                      </circle>
+                      <circle cx="250" cy="95" r="20" fill="none" stroke="#10b981" strokeWidth="3" opacity="0">
+                        <animate attributeName="r" values="0;40;0" dur="1.5s" begin="2.5s" />
+                        <animate attributeName="opacity" values="0;1;0" dur="1.5s" begin="2.5s" />
+                      </circle>
+                    </g>
+                    
+                    {/* High-Tech Robot (appears after transformation) */}
+                    <g opacity="0" className="animate-fade-in">
+                      <animate
+                        attributeName="opacity"
+                        values="0;0;1"
+                        dur="2s"
+                        begin="4s"
+                        fill="freeze"
+                      />
+                      <animateTransform
+                        attributeName="transform"
+                        type="scale"
+                        values="0;0;1"
+                        dur="2s"
+                        begin="4s"
+                        fill="freeze"
+                      />
+                      
+                      {/* Robot Head with visor */}
+                      <rect x="235" y="25" width="30" height="25" fill="#1f2937" rx="5" />
+                      <rect x="240" y="30" width="20" height="8" fill="#3b82f6" rx="2" className="animate-pulse" />
+                      <circle cx="245" cy="34" r="2" fill="#10b981" className="animate-ping" />
+                      <circle cx="255" cy="34" r="2" fill="#10b981" className="animate-ping" style={{"animationDelay": "0.5s"} as React.CSSProperties} />
+                      
+                      {/* Robot Body - High-tech chest panel */}
+                      <rect x="235" y="50" width="30" height="40" fill="#374151" rx="3" />
+                      <rect x="240" y="55" width="20" height="15" fill="#1f2937" rx="2" />
+                      <rect x="242" y="57" width="16" height="3" fill="#3b82f6" className="animate-pulse" />
+                      <rect x="242" y="62" width="12" height="2" fill="#10b981" />
+                      <rect x="242" y="66" width="8" height="2" fill="#f59e0b" />
+                      
+                      {/* Power Core */}
+                      <circle cx="250" cy="80" r="6" fill="#3b82f6" className="animate-pulse" />
+                      <circle cx="250" cy="80" r="3" fill="#60a5fa" className="animate-ping" />
+                      
+                      {/* Robot Arms - Mechanical */}
+                      <rect x="205" y="65" width="25" height="6" fill="#374151" rx="3" />
+                      <rect x="270" y="65" width="25" height="6" fill="#374151" rx="3" />
+                      <circle cx="210" cy="68" r="4" fill="#1f2937" />
+                      <circle cx="290" cy="68" r="4" fill="#1f2937" />
+                      <rect x="200" y="72" width="8" height="15" fill="#374151" rx="2" />
+                      <rect x="292" y="72" width="8" height="15" fill="#374151" rx="2" />
+                      
+                      {/* Robot Legs - Mechanical */}
+                      <rect x="240" y="90" width="8" height="35" fill="#374151" rx="2" />
+                      <rect x="252" y="90" width="8" height="35" fill="#374151" rx="2" />
+                      <rect x="235" y="125" width="18" height="8" fill="#1f2937" rx="2" />
+                      <rect x="247" y="125" width="18" height="8" fill="#1f2937" rx="2" />
+                      
+                      {/* Jet Boosters */}
+                      <ellipse cx="244" cy="133" rx="3" ry="6" fill="#ef4444" className="animate-pulse" />
+                      <ellipse cx="256" cy="133" rx="3" ry="6" fill="#ef4444" className="animate-pulse" style={{"animationDelay": "0.3s"} as React.CSSProperties} />
+                    </g>
+                    
+                    {/* Floating Tech Elements */}
+                    <g className="animate-float" style={{"animationDelay": "5s"} as React.CSSProperties}>
+                      <text x="180" y="40" fontSize="14" fill="#3b82f6" className="font-bold">&lt;AI/&gt;</text>
+                      <text x="320" y="50" fontSize="12" fill="#10b981" className="font-bold">{'{ CODE }'}</text>
+                      <text x="150" y="120" fontSize="10" fill="#8b5cf6" className="font-bold">NEURAL NET</text>
+                      <text x="350" y="110" fontSize="10" fill="#f59e0b" className="font-bold">BLOCKCHAIN</text>
+                    </g>
+                    
+                    {/* Power Bar at Bottom */}
+                    <g className="animate-fade-in" style={{"animationDelay": "1s"} as React.CSSProperties}>
+                      <text x="250" y="170" fontSize="12" fill="#1f2937" textAnchor="middle" className="font-bold">POWER LEVEL</text>
+                      
+                      {/* Power Bar Background */}
+                      <rect x="150" y="175" width="200" height="12" fill="#e5e7eb" rx="6" stroke="#374151" strokeWidth="1" />
+                      
+                      {/* Power Bar Fill - Animated */}
+                      <rect x="152" y="177" width="0" height="8" fill="url(#powerGradient)" rx="4">
+                        <animate attributeName="width" values="0;0;196" dur="6s" begin="1s" fill="freeze" />
+                      </rect>
+                      
+                      {/* Power Level Text */}
+                      <text x="365" y="183" fontSize="10" fill="#1f2937" className="font-bold">
+                        <animate attributeName="opacity" values="0;0;1" dur="1s" begin="6s" fill="freeze" />
+                        MAX POWER!
+                      </text>
+                      
+                      {/* Power Gradient Definition */}
+                      <defs>
+                        <linearGradient id="powerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#ef4444" />
+                          <stop offset="30%" stopColor="#f59e0b" />
+                          <stop offset="60%" stopColor="#10b981" />
+                          <stop offset="100%" stopColor="#3b82f6" />
+                        </linearGradient>
+                      </defs>
+                    </g>
+                    
+                    {/* Final Sparkle Effect */}
+                    <g opacity="0">
+                      <animate attributeName="opacity" values="0;0;1;0" dur="2s" begin="6s" />
+                      <polygon points="100,30 102,35 107,35 103,38 105,43 100,40 95,43 97,38 93,35 98,35" fill="#fbbf24" className="animate-ping" />
+                      <polygon points="400,60 402,65 407,65 403,68 405,73 400,70 395,73 397,68 393,65 398,65" fill="#fbbf24" className="animate-ping" />
+                      <polygon points="120,140 122,145 127,145 123,148 125,153 120,150 115,153 117,148 113,145 118,145" fill="#fbbf24" className="animate-ping" />
+                      <polygon points="380,140 382,145 387,145 383,148 385,153 380,150 375,153 377,148 373,145 378,145" fill="#fbbf24" className="animate-ping" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
