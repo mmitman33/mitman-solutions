@@ -3,6 +3,10 @@ import { ImageResponse } from 'next/og'
 export const runtime = 'edge'
  
 export async function GET() {
+  // Fetch the image data
+  const imageUrl = 'https://mitman-solutions.com/images/icon-only-large.png'
+  const imageData = await fetch(imageUrl).then((res) => res.arrayBuffer())
+  
   return new ImageResponse(
     (
       <div
@@ -25,32 +29,15 @@ export async function GET() {
             gap: '32px',
           }}
         >
-          <div
+          <img
+            src={imageData as any}
+            alt="Mitman Solutions"
+            width="200"
+            height="200"
             style={{
-              width: '200px',
-              height: '200px',
-              background: 'linear-gradient(135deg, #3b82f6, #6366f1)',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '120px',
-              color: 'white',
+              objectFit: 'contain',
             }}
-          >
-            ⚡
-          </div>
-          <div
-            style={{
-              fontSize: '48px',
-              fontWeight: 'bold',
-              color: '#1a1a1a',
-              textAlign: 'center',
-              lineHeight: '1.2',
-            }}
-          >
-            Mitman Solutions: Accelerate Your Impact
-          </div>
+          />
         </div>
       </div>
     ),
