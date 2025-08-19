@@ -100,15 +100,15 @@ export default function Contact() {
                 <div>
                   <h2 className="text-3xl font-bold mb-4">Send a Message</h2>
                   <p className="text-muted-foreground text-lg">
-                    Fill out the form below and I&apos;ll get back to you within 24 hours to discuss your project.
+                    Fill out the form below and I&apos;ll reach out within 24 hours to discuss your business needs.
                   </p>
                 </div>
               
               <Card>
                 <CardHeader>
-                  <CardTitle>Project Inquiry</CardTitle>
+                  <CardTitle>Let's get after it!</CardTitle>
                   <CardDescription>
-                    Tell us about your project and how I can help accelerate your business goals.
+                    Tell us about your business and any projects you have in mind.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

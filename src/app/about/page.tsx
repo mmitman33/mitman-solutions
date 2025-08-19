@@ -20,12 +20,12 @@ export default function About() {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center space-y-8">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight animate-fade-in">
-                How We <span className="text-primary font-extrabold">Transform</span> Your Business
+                How I Will <span className="text-primary font-extrabold">Transform</span> Your Business
               </h1>
             
             <ScrollAnimation>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                We offer enterprise-grade engineering expertise to modernize your technology stack, 
+                I offer enterprise-grade engineering expertise to modernize your technology stack, 
                 streamline operations, and accelerate growth through smart software solutions.
               </p>
             </ScrollAnimation>
@@ -40,11 +40,11 @@ export default function About() {
         <div className="container mx-auto px-4">
                   <ScrollAnimation className="text-center space-y-4 mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-            Why Your Business Can <span className="text-primary font-extrabold">Trust</span> Our Expertise
+            Why Your Business Can <span className="text-primary font-extrabold">Trust</span> My Expertise
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our solutions are backed by experience building enterprise-scale systems that serve millions of users.
-            We bring that same level of reliability and performance to your business.
+            My software solutions are backed by experience building enterprise-scale systems to serve millions of users.
+            I bring that same level of scrutiny, reliability and performance to your business.
           </p>
         </ScrollAnimation>
           
@@ -59,19 +59,19 @@ export default function About() {
                       <span className="text-orange-600 font-bold text-xl">☁️</span>
                     </div>
                     <div>
-                      <CardTitle className="text-xl text-foreground group-hover:text-orange-700 transition-colors">Enterprise-Scale Experience</CardTitle>
-                      <CardDescription className="text-lg">Amazon Web Services - Senior Engineer</CardDescription>
+                      <CardTitle className="text-xl text-foreground group-hover:text-orange-700 transition-colors">Enterprise-Scale</CardTitle>
+                      <CardDescription className="text-lg">Former Amazon Web Services Senior Engineer</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
               <CardContent className="relative z-10">
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground">What this means for you:</strong> Leverage solutions that power millions of AWS customers. We&apos;ll build systems that grow with your business without breaking.
+                  <strong className="text-foreground">What this means for you:</strong> I'll leverage solutions that power millions of AWS customers, building systems that grow with your business without breaking.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Designed and operated best-in-class Cloud services for 7+ years</li>
-                  <li>• Security best practices from enterprise environments</li>
+                  <li>• Designed and operated best-in-class AWS services for 7+ years</li>
                   <li>• Performance and cost optimizations for any size business</li>
+                  <li>• Relentless delivery and iteration guaranteed</li>
                 </ul>
               </CardContent>
             </Card>
@@ -87,17 +87,17 @@ export default function About() {
                       <span className="text-blue-600 font-bold text-xl">🚀</span>
                     </div>
                     <div>
-                      <CardTitle className="text-xl text-foreground group-hover:text-blue-700 transition-colors">Innovation & User Experience</CardTitle>
-                      <CardDescription className="text-lg">Opendoor - Product Engineering</CardDescription>
+                      <CardTitle className="text-xl text-foreground group-hover:text-blue-700 transition-colors">Innovation First</CardTitle>
+                      <CardDescription className="text-lg">Prioritize What Your Customers Need</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
               <CardContent className="relative z-10">
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground">What this means for you:</strong> We understand how to build software that people actually want to use. Your customers will love the intuitive experiences we create.
+                  <strong className="text-foreground">What this means for you:</strong> I understand how to build software that people actually want to use. Your customers will love the intuitive experiences we create.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• User-centered design that converts visitors</li>
+                  <li>• User-centered design that converts visitors into customers</li>
                   <li>• Data-driven insights for better decisions</li>
                   <li>• Seamless integrations with existing systems</li>
                 </ul>
@@ -121,7 +121,7 @@ export default function About() {
                 <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-4">
                     Strong foundation in computer science fundamentals, algorithms, 
-                    and software engineering principles from Dartmouth College.
+                    and software engineering principles from Dartmouth College.  I'm not just a coder, I'm a problem solver.
                   </p>
                 </CardContent>
               </Card>
@@ -139,8 +139,8 @@ export default function About() {
                 </CardHeader>
                 <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-4">
-                    Co-inventor and patent holder for the MVP Tactical HEKTR system, 
-                    demonstrating a track record of creativity and cutting-edge problem solving.
+                    Co-inventor and patent holder for the MVP Tactical HEKTR system. 
+                    A track record of creativity and cutting-edge problem solving.
                   </p>
                   <Button variant="outline" size="sm" className="group-hover:border-purple-400 transition-colors" asChild>
                     <a 
@@ -190,8 +190,8 @@ export default function About() {
               Our <span className="text-primary font-extrabold">Commitment</span> to Your Success
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              We&apos;re dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
-              Your success is our primary focus, and we measure our value by the growth we help you achieve.
+              I&apos;,m dedicated to modernizing businesses across Wisconsin and beyond through strategic technology implementation. 
+              Your success is my primary focus, and I measure my value by the growth you achieve.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

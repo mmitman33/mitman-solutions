@@ -23,8 +23,10 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Transform your operations with custom software solutions, e-commerce, and AI integration. 
-                  <strong className="text-foreground"> Built for growth, designed for results.</strong>
+                  Transform your operations with custom software solutions, e-commerce platforms, AI integrations and more.
+                </p>
+                <p className="text-xl sm:text-2xl text-foreground font-semibold leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Built for growth, designed for results.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                   <Button size="lg" className="hover-lift text-base px-8" asChild>
@@ -83,7 +85,7 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Modern e-commerce platforms with payment processing, inventory management, and growth-focused features.
                 </p>
-                <Button variant="outline" size="sm" className="w-full" asChild>
+                <Button variant="outline" size="lg" className="w-full text-base" asChild>
                   <Link href="/services">View Details</Link>
                 </Button>
               </CardContent>
@@ -105,7 +107,7 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Scalable web applications using React, Next.js, and cloud infrastructure to streamline your operations.
                 </p>
-                <Button size="sm" className="w-full" asChild>
+                <Button size="lg" className="w-full text-base" asChild>
                   <Link href="/contact">Start Project</Link>
                 </Button>
               </CardContent>
@@ -127,7 +129,7 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Integrate AI-powered features like chatbots, data analysis, and process automation into your workflow.
                 </p>
-                <Button variant="outline" size="sm" className="w-full" asChild>
+                <Button variant="outline" size="lg" className="w-full text-base" asChild>
                   <Link href="/about">Learn More</Link>
                 </Button>
               </CardContent>
@@ -147,7 +149,7 @@ export default function Home() {
               Ready to <span className="text-primary font-extrabold">Get Started</span>?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Let&apos;s discuss your project and see how we can help modernize your business.
+              Let&apos;s discuss your business needs and see how we can modernize your software.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
@@ -155,7 +157,7 @@ export default function Home() {
                 <a href="tel:414-526-6926">Call (414) 526-6926</a>
               </Button>
               <Button size="lg" variant="outline" className="hover-lift flex-1 h-8 sm:h-8 py-4 text-base font-semibold" asChild>
-                <Link href="/contact">Send Message</Link>
+                <Link href="/contact">Get in Touch</Link>
               </Button>
             </div>
             
@@ -163,7 +165,7 @@ export default function Home() {
               <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-foreground">
                 <span>🏆 7+ years AWS Experience</span>
                 <span className="hidden sm:inline font-extrabold">•</span>
-                <span>👨🏼‍💻 End-to-end Designer</span>
+                <span>👨🏼‍💻 End-to-end Delivery</span>
                 <span className="hidden sm:inline font-extrabold">•</span>
                 <span>📍 Wisconsin Based</span>
               </div>

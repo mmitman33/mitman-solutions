@@ -14,7 +14,7 @@ export default function Services() {
           <InitialAnimation delay={400}>
             <div className="max-w-4xl mx-auto space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
-                We&apos;re Here to Help.
+                I&apos;m Here to Help.
                 <span className="text-3xl sm:text-4xl lg:text-5xl text-foreground block font-semibold mt-6 mb-4">
                   Whether You&apos;re:
                 </span>
@@ -27,11 +27,11 @@ export default function Services() {
                 </span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Working on a new product idea. Growing your business. Optimizing operations.
-                <strong className="text-foreground font-extrabold"> We deliver the technology solutions you need to succeed.</strong>
+                Working on a new product? Growing your business? Optimizing operations?
+                <strong className="text-foreground font-extrabold"> We'll deliver software that your customers will love.</strong>
               </p>
-              <Button size="lg" className="hover-lift" asChild>
-                <Link href="/contact">Let&apos;s Get in Touch</Link>
+              <Button size="lg" className="hover-lift text-base px-8" asChild>
+                <Link href="/contact">Get in Touch</Link>
               </Button>
             </div>
           </InitialAnimation>
@@ -45,10 +45,10 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-12">
                           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-                Here&apos;s How We <span className="text-primary font-extrabold">Help You Win</span>
+                Here&apos;s How I <span className="text-primary font-extrabold">Help You Win</span>
               </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Whether you&apos;re starting fresh, growing fast, or optimizing operations
+              Whether you&apos;re starting fresh, growing fast, or optimizing your operations
             </p>
           </ScrollAnimation>
           
@@ -82,8 +82,8 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">We&apos;ll bring your vision to life.</strong> From MVP development to full product launches, 
-                  we handle the technical complexity so you can focus on your customers.
+                  <strong className="text-foreground font-extrabold">I&apos;ll bring your vision to life.</strong> From MVP development to full product launches, 
+                  I'll handle the technical complexity so you can focus on your customers.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
                   <li className="font-semibold">• MVP & prototype development</li>
@@ -122,7 +122,7 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">We&apos;ll help you scale without breaking.</strong> Enterprise-grade infrastructure and 
+                  <strong className="text-foreground font-extrabold">I&apos;ll help you scale without breaking.</strong> Enterprise-grade infrastructure and 
                   performance optimization to handle your growth.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
@@ -181,9 +181,9 @@ export default function Services() {
       <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-24">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technology Consulting</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technical Consulting</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Beyond development, we provide strategic guidance so you make the right software decisions and ship products that your customers love.
+              Beyond development, I provide strategic guidance so you make the right technical decisions and ship products that your customers love.
             </p>
           </ScrollAnimation>
           
@@ -214,7 +214,7 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Evaluate existing systems and design scalable systems to support future growth.
+                  Evaluate your existing stack and design scalable systems to support future growth.
                 </p>
               </CardContent>
               </Card>
@@ -230,7 +230,7 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Level up your team with best practices, system designs, code reviews, and technical leadership.
+                  Level-up your team with best practices, tech talks, system designs, code reviews, and technical leadership.
                 </p>
               </CardContent>
               </Card>
@@ -242,11 +242,11 @@ export default function Services() {
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-red-600 font-bold text-2xl">⚡</span>
                 </div>
-                <CardTitle className="text-lg">Performance Optimization</CardTitle>
+                <CardTitle className="text-lg">System Optimization</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Identify bottlenecks and optimize applications for speed, scalability, and cost-effectiveness.
+                  Identify bottlenecks and optimize your applications for speed, scalability, and cost.
                 </p>
               </CardContent>
               </Card>
@@ -329,11 +329,11 @@ export default function Services() {
               Let&apos;s discuss how we can leverage technology to accelerate your business goals and create a lasting competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="hover-lift" asChild>
-                <Link href="/contact">Schedule a Consultation</Link>
-              </Button>
-              <Button size="lg" variant="outline" className="hover-lift" asChild>
+              <Button size="lg" variant="outline" className="hover-lift text-base px-8" asChild>
                 <a href="tel:414-526-6926">Call (414) 526-6926</a>
+              </Button>
+              <Button size="lg" className="hover-lift text-base px-8" asChild>
+                <Link href="/contact">Get in Touch</Link>
               </Button>
             </div>
             </div>

@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Mitman Solutions</h3>
+            <h3 className="font-semibold text-lg">Mitman Solutions, LLC</h3>
             <p className="text-muted-foreground text-sm">
               Professional software consulting and freelancing services.  Accelerate your business.
             </p>
