@@ -15,19 +15,37 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-medium">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/services" className="hover:text-foreground transition-colors">Web Development</Link></li>
-              <li><Link href="/services" className="hover:text-foreground transition-colors">Mobile Apps</Link></li>
-              <li><Link href="/services" className="hover:text-foreground transition-colors">Consulting</Link></li>
-              <li><Link href="/services" className="hover:text-foreground transition-colors">Technical Strategy</Link></li>
+              <li>Web & Mobile Development</li>
+              <li>Technical Strategy & Consulting</li>
+              <li>Scale Your Business</li>
+              <li>Optimize Operations</li>
             </ul>
           </div>
           
           <div className="space-y-4">
             <h4 className="font-medium">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/about" className="hover:text-foreground transition-colors">About</Link></li>
-              <li><Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
-              <li><Link href="/portfolio" className="hover:text-foreground transition-colors">Portfolio</Link></li>
+              <li><Link href="/about" className="hover:text-foreground transition-colors">About Me</Link></li>
+              <li>
+                <a 
+                  href="https://github.com/mmitman33"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/Matt Mitman Resume.pdf"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  My Resume
+                </a>
+              </li>
             </ul>
           </div>
           
