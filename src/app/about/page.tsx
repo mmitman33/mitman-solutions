@@ -18,13 +18,11 @@ export default function About() {
         
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <ScrollAnimation>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight">
                 <span className="inline-block animate-fade-in">How We</span>{" "}
                 <span className="text-primary font-extrabold inline-block animate-fade-in" style={{"animationDelay": "0.2s"} as React.CSSProperties}>Transform</span>{" "}
                 <span className="inline-block animate-fade-in" style={{"animationDelay": "0.4s"} as React.CSSProperties}>Your Business</span>
               </h1>
-            </ScrollAnimation>
             
             <ScrollAnimation>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
@@ -41,24 +39,6 @@ export default function About() {
                 <Button size="lg" variant="outline" className="hover-lift animate-slide-up h-14" style={{"animationDelay": "0.2s"} as React.CSSProperties} asChild>
                   <Link href="/services">View Our Services</Link>
                 </Button>
-              </div>
-            </ScrollAnimation>
-
-            {/* Interactive Stats */}
-            <ScrollAnimation>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 max-w-2xl mx-auto">
-                <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-xl border hover:shadow-lg transition-all duration-300 hover-lift">
-                  <div className="text-3xl font-bold text-primary animate-pulse">7+</div>
-                  <div className="text-sm text-muted-foreground mt-1">Years AWS Experience</div>
-                </div>
-                <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-xl border hover:shadow-lg transition-all duration-300 hover-lift" style={{"animationDelay": "0.1s"} as React.CSSProperties}>
-                  <div className="text-3xl font-bold text-primary animate-pulse">100+</div>
-                  <div className="text-sm text-muted-foreground mt-1">Projects Delivered</div>
-                </div>
-                <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-xl border hover:shadow-lg transition-all duration-300 hover-lift" style={{"animationDelay": "0.2s"} as React.CSSProperties}>
-                  <div className="text-3xl font-bold text-primary animate-pulse">24/7</div>
-                  <div className="text-sm text-muted-foreground mt-1">Support Available</div>
-                </div>
               </div>
             </ScrollAnimation>
           </div>
@@ -82,8 +62,8 @@ export default function About() {
             <ScrollAnimation>
               <Card className="border-2 hover:border-primary/50 transition-all duration-500 hover-lift group overflow-hidden relative">
                 {/* Animated background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardHeader className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <CardHeader className="relative z-10">
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                       <span className="text-orange-600 font-bold text-xl">☁️</span>
@@ -94,7 +74,7 @@ export default function About() {
                     </div>
                   </div>
                 </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
                 <p className="text-muted-foreground mb-4">
                   <strong className="text-foreground">What this means for you:</strong> Leverage solutions that power millions of AWS customers. We&apos;ll build systems that grow with your business without breaking.
                 </p>
@@ -110,8 +90,8 @@ export default function About() {
             <ScrollAnimation>
               <Card className="border-2 hover:border-primary/50 transition-all duration-500 hover-lift group overflow-hidden relative">
                 {/* Animated background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardHeader className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <CardHeader className="relative z-10">
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                       <span className="text-blue-600 font-bold text-xl">🚀</span>
@@ -122,7 +102,7 @@ export default function About() {
                     </div>
                   </div>
                 </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
                 <p className="text-muted-foreground mb-4">
                   <strong className="text-foreground">What this means for you:</strong> We understand how to build software that people actually want to use. Your customers will love the intuitive experiences we create.
                 </p>
@@ -139,35 +119,44 @@ export default function About() {
           {/* Innovation & Education */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ScrollAnimation>
-              <Card className="text-center group hover:shadow-xl transition-all duration-500 hover-lift border-2 hover:border-green-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardHeader className="relative">
+              <Card className="text-center group hover:shadow-xl transition-all duration-500 hover-lift border-2 hover:border-green-200 relative overflow-hidden h-full flex flex-col">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <CardHeader className="relative z-10">
                   <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <span className="text-green-600 font-bold text-2xl">🎓</span>
                   </div>
                   <CardTitle className="group-hover:text-green-700 transition-colors">Dartmouth College</CardTitle>
                   <CardDescription>Computer Science Graduate</CardDescription>
                 </CardHeader>
-                <CardContent className="relative">
-                  <p className="text-muted-foreground">
+                <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
+                  <p className="text-muted-foreground mb-4">
                     Strong foundation in computer science fundamentals, algorithms, 
-                    and software engineering principles.
+                    and software engineering principles from this prestigious Ivy League institution.
                   </p>
+                  <Button variant="outline" size="sm" className="group-hover:border-green-400 transition-colors" asChild>
+                    <a 
+                      href="https://dartmouth.edu"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Learn About Dartmouth
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             </ScrollAnimation>
 
             <ScrollAnimation>
-              <Card className="text-center group hover:shadow-xl transition-all duration-500 hover-lift border-2 hover:border-purple-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-purple-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardHeader className="relative">
+              <Card className="text-center group hover:shadow-xl transition-all duration-500 hover-lift border-2 hover:border-purple-200 relative overflow-hidden h-full flex flex-col">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-purple-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <CardHeader className="relative z-10">
                   <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <span className="text-purple-600 font-bold text-2xl">🦾</span>
                   </div>
                   <CardTitle className="group-hover:text-purple-700 transition-colors">Patent Holder</CardTitle>
                   <CardDescription>Mobile Virtual Player Tactical</CardDescription>
                 </CardHeader>
-                <CardContent className="relative">
+                <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-4">
                     Co-inventor and patent holder for the MVP Tactical HEKTR system, 
                     demonstrating a track record of creativity and cutting-edge problem solving.
@@ -186,16 +175,16 @@ export default function About() {
             </ScrollAnimation>
 
             <ScrollAnimation>
-              <Card className="text-center group hover:shadow-xl transition-all duration-500 hover-lift border-2 hover:border-red-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-red-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardHeader className="relative">
+              <Card className="text-center group hover:shadow-xl transition-all duration-500 hover-lift border-2 hover:border-red-200 relative overflow-hidden h-full flex flex-col">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-red-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <CardHeader className="relative z-10">
                   <div className="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <span className="text-red-600 font-bold text-2xl">🎙️</span>
                   </div>
                   <CardTitle className="group-hover:text-red-700 transition-colors">Podcast Host</CardTitle>
                   <CardDescription>The Rest Period Podcast</CardDescription>
                 </CardHeader>
-                <CardContent className="relative">
+                <CardContent className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-4">
                     Host of The Rest Period Podcast, sharing insights on technology, 
                     entrepreneurship, and business strategy.  And just having fun.
