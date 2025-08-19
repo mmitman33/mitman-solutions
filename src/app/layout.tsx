@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mitman Solutions - Modernize Your Tech Stack",
+  title: "Mitman Solutions: Accelerate Your Impact",
   description: "Transform your business with enterprise-grade software solutions. E-commerce, AI integration, and modern web applications that drive growth.",
   icons: {
     icon: [
@@ -23,6 +23,28 @@ export const metadata: Metadata = {
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: '/favicon-32.png',
+  },
+  openGraph: {
+    title: "Mitman Solutions: Accelerate Your Impact",
+    description: "Transform your business with enterprise-grade software solutions. E-commerce, AI integration, and modern web applications that drive growth.",
+    url: "https://mitman-solutions.com",
+    siteName: "Mitman Solutions",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Mitman Solutions: Accelerate Your Impact",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mitman Solutions: Accelerate Your Impact",
+    description: "Transform your business with enterprise-grade software solutions. E-commerce, AI integration, and modern web applications that drive growth.",
+    images: ["/og-image.png"],
   },
 };
 
