@@ -6,15 +6,18 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Email Setup
 
-This project uses Resend for email functionality. To set up email sending:
+This project uses Nodemailer with Gmail for email functionality. To set up email sending:
 
-1. Sign up for a free account at [Resend](https://resend.com)
-2. Get your API key from the dashboard
+1. Enable 2-factor authentication on your Gmail account
+2. Generate an App Password for this application
 3. Create a `.env.local` file in the root directory with:
    ```
-   RESEND_API_KEY=your_resend_api_key_here
+   EMAIL_USER=mitman.solutions@gmail.com
+   EMAIL_PASS=your_gmail_app_password_here
    ```
-4. For production on Vercel, add the `RESEND_API_KEY` environment variable in your Vercel project settings
+4. For production on Vercel, add both `EMAIL_USER` and `EMAIL_PASS` environment variables in your Vercel project settings
+
+**Note**: Use Gmail App Passwords, not your regular Gmail password. You can generate one in your Google Account settings under Security > 2-Step Verification > App passwords.
 
 ## Getting Started
 

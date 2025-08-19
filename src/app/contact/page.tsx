@@ -185,7 +185,7 @@ export default function Contact() {
                     
                     {submitStatus === 'success' && (
                       <div className="text-green-600 text-center text-sm">
-                        ✅ Your message has been sent successfully! I'll get back to you within 24 hours.
+                        ✅ Your message has been sent!
                       </div>
                     )}
                     

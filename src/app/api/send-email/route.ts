@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
-
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
   try {
@@ -28,24 +26,19 @@ ${message}
 This message was sent from the Mitman Solutions contact form.
     `.trim();
 
-    // Send email using Resend
-    if (!resend) {
-      // Fallback for development when API key isn't set
-      console.log('Email to be sent (development mode):', {
-        to: 'mitman.solutions@gmail.com',
-        subject: `Business Inquiry from ${name} - ${company || 'Individual'}`,
-        body: emailContent
-      });
-      
-      return NextResponse.json(
-        { message: 'Email sent successfully (development mode)' },
-        { status: 200 }
-      );
-    }
+    // Create transporter for Nodemailer
+    const transporter = nodemailer.createTransporter({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER || 'mitman.solutions@gmail.com',
+        pass: process.env.EMAIL_PASS || process.env.GMAIL_APP_PASSWORD,
+      },
+    });
 
-    const { data, error } = await resend.emails.send({
-      from: 'Mitman Solutions <noreply@mitman-solutions.com>',
-      to: ['mitman.solutions@gmail.com'],
+    // Email options
+    const mailOptions = {
+      from: process.env.EMAIL_USER || 'mitman.solutions@gmail.com',
+      to: 'mitman.solutions@gmail.com',
       subject: `Business Inquiry from ${name} - ${company || 'Individual'}`,
       text: emailContent,
       html: `
@@ -65,20 +58,23 @@ This message was sent from the Mitman Solutions contact form.
           </p>
         </div>
       `,
-    });
+    };
 
-    if (error) {
-      console.error('Resend error:', error);
+    try {
+      const info = await transporter.sendMail(mailOptions);
+      console.log('Email sent successfully:', info.messageId);
+      
+      return NextResponse.json(
+        { message: 'Email sent successfully', messageId: info.messageId },
+        { status: 200 }
+      );
+    } catch (error) {
+      console.error('Nodemailer error:', error);
       return NextResponse.json(
         { error: 'Failed to send email' },
         { status: 500 }
       );
     }
-
-    return NextResponse.json(
-      { message: 'Email sent successfully', data },
-      { status: 200 }
-    );
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
