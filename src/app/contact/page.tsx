@@ -379,17 +379,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
-      {/* Final CTA */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Ready to Get Started?
-            </h2>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
