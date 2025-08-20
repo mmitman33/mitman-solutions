@@ -136,6 +136,12 @@ export default function Home() {
               </Card>
             </ScrollAnimation>
           </div>
+          
+          <ScrollAnimation className="text-center mt-8">
+            <p className="text-2xl sm:text-3xl lg:text-4xl text-foreground">
+              and <span className="text-primary font-semibold">More...</span>
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 
