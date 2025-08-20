@@ -3,9 +3,11 @@ import { ImageResponse } from 'next/og'
 export const runtime = 'edge'
  
 export async function GET() {
-  // Fetch the image data
-  const imageUrl = 'https://mitman-solutions.com/images/icon-only-large.png'
-  const imageResponse = await fetch(imageUrl)
+  // Fetch the image data with cache busting
+  const imageUrl = 'https://mitman-solutions.com/images/icon-only-large.png?v=' + Date.now()
+  const imageResponse = await fetch(imageUrl, {
+    cache: 'no-store'
+  })
   
   if (!imageResponse.ok) {
     throw new Error(`Failed to fetch image: ${imageResponse.status}`)
@@ -52,6 +54,11 @@ export async function GET() {
     {
       width: 1200,
       height: 630,
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0',
+      },
     },
   )
 }
