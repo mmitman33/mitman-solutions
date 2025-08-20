@@ -14,7 +14,7 @@ export default function Services() {
           <InitialAnimation delay={400}>
             <div className="max-w-4xl mx-auto space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
-                I&apos;m Here to Help.
+                Here to Help.
                 <span className="text-3xl sm:text-4xl lg:text-5xl text-foreground block font-semibold mt-6 mb-4">
                   Whether You&apos;re:
                 </span>
@@ -28,7 +28,7 @@ export default function Services() {
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 Working on a new product? Growing your business? Optimizing operations?
-                <strong className="text-foreground font-extrabold"> We&apos;ll deliver software that your customers will love.</strong>
+                <strong className="text-foreground font-extrabold"> Let&apos;s deliver software that your customers will love.</strong>
               </p>
               <Button size="lg" className="hover-lift text-base px-8" asChild>
                 <Link href="/contact">Get in Touch</Link>
@@ -45,7 +45,7 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-12">
                           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-                Here&apos;s How I <span className="text-primary font-extrabold">Help You Win</span>
+                How We'll <span className="text-primary font-extrabold">Help You Win</span>
               </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Whether you&apos;re starting fresh, growing fast, or optimizing your operations
@@ -82,8 +82,8 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">I&apos;ll bring your vision to life.</strong> From MVP development to full product launches, 
-                  I&apos;ll handle the technical complexity so you can focus on your customers.
+                  <strong className="text-foreground font-extrabold">Bring your vision to life.</strong> From MVP development to full product launches, 
+                  we&apos;ll handle the technical complexity so you can focus on your customers.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
                   <li className="font-semibold">• MVP & prototype development</li>
@@ -122,8 +122,8 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">I&apos;ll help you scale without breaking.</strong> Enterprise-grade infrastructure and 
-                  performance optimization to handle your growth.
+                  <strong className="text-foreground font-extrabold">Scale without breaking.</strong> We'll leverage enterprise-grade infrastructure and 
+                  performance monitoring to scale seamlessly.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
                   <li className="font-semibold">• Cloud migration & optimization</li>
@@ -161,7 +161,7 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">We&apos;ll automate what matters.</strong> Custom tools and AI integration to eliminate 
+                  <strong className="text-foreground font-extrabold">Automate what matters.</strong> We'll build custom tools and AI integration to eliminate 
                   repetitive tasks and improve efficiency.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
@@ -183,7 +183,7 @@ export default function Services() {
           <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technical Consulting</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Beyond development, I provide strategic guidance so we make the right technical decisions and ship products that your customers will love.
+              Beyond software development, we provide strategic guidance so you make the right technical decisions and ship products that your customers will love.
             </p>
           </ScrollAnimation>
           
@@ -192,13 +192,13 @@ export default function Services() {
               <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-2xl">🎯</span>
+                  <span className="text-blue-600 font-bold text-2xl">🧭</span>
                 </div>
                 <CardTitle className="text-lg">Technical Strategy</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  Align your technical investments with business goals and create a roadmap for digital transformation.
+                  Align your technical investments with business goals to create a roadmap for digital transformation.
                 </p>
               </CardContent>
               </Card>
@@ -261,7 +261,7 @@ export default function Services() {
           <ScrollAnimation className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Our Process</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A proven methodology that ensures your project is delivered on time, within budget, and exceeds expectations.
+              We use proven methodologies that deliver projects on time, within budget, and exceeding expectations.
             </p>
           </ScrollAnimation>
           

@@ -295,15 +295,15 @@ export default function Contact() {
                     </div>
                     <div>
                       <CardTitle>Location</CardTitle>
-                      <CardDescription>Serving clients nationwide</CardDescription>
+                      <CardDescription>Wisconsin, USA</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
                     <strong>Based in Wisconsin</strong><br/>
-                    Working with businesses across the United States<br/>
-                    Remote collaboration &amp; on-site consulting available
+                    And open to work with businesses across the United States<br/>
+                    Remote collaboration &amp; on-site consulting available as needed.
                   </p>
                 </CardContent>
               </Card>

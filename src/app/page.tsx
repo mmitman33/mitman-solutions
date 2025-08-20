@@ -165,9 +165,9 @@ export default function Home() {
               <div className="inline-flex items-center space-x-4 sm:space-x-6 bg-background/80 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 text-sm text-foreground">
                 <span>🏆 7+ years AWS Experience</span>
                 <span className="hidden sm:inline font-extrabold">•</span>
-                <span>👨🏼‍💻 End-to-end Delivery</span>
+                <span>👨🏼‍💻 Full-Stack Engineering</span>
                 <span className="hidden sm:inline font-extrabold">•</span>
-                <span>📍 Wisconsin Based</span>
+                <span>📍 Started in Wisconsin</span>
               </div>
             </div>
             </div>
