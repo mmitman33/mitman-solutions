@@ -45,7 +45,7 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-12">
                           <h2 className="text-3xl sm:text-3xl lg:text-5xl font-bold text-foreground">
-                How We'll <span className="text-primary font-extrabold">Help You Win</span>
+                How We&apos;ll <span className="text-primary font-extrabold">Help You Win</span>
               </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Whether you&apos;re starting fresh, growing fast, or optimizing your operations
@@ -122,7 +122,7 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">Scale without breaking.</strong> We'll leverage enterprise-grade infrastructure and 
+                  <strong className="text-foreground font-extrabold">Scale without breaking.</strong> We&apos;ll leverage enterprise-grade infrastructure and 
                   performance monitoring to scale seamlessly.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
@@ -161,7 +161,7 @@ export default function Services() {
           </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  <strong className="text-foreground font-extrabold">Automate what matters.</strong> We'll build custom tools and AI integration to eliminate 
+                  <strong className="text-foreground font-extrabold">Automate what matters.</strong> We&apos;ll build custom tools and AI integration to eliminate 
                   repetitive tasks and improve efficiency.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left">
