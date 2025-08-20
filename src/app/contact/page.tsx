@@ -77,7 +77,7 @@ export default function Contact() {
             <div className="max-w-4xl mx-auto space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
                 Let&apos;s Build Something
-                <span className="text-primary block text-7xl sm:text-8xl lg:text-9xl">Amazing.</span>
+                <span className="text-primary block text-6xl sm:text-7xl lg:text-8xl">Amazing.</span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
                 Ready to accelerate your impact? 
