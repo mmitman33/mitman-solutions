@@ -38,7 +38,7 @@ export default function About() {
       <section className="py-20 lg:py-24">
         <div className="container mx-auto px-4">
         <ScrollAnimation className="text-center space-y-4 mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
             Why Your Business Can <span className="text-primary font-extrabold">Trust</span> My Expertise
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -185,7 +185,7 @@ export default function About() {
       <section className="bg-gradient-to-r from-primary/5 to-blue-50/30 py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
               My <span className="text-primary font-extrabold">Commitment</span> to Your Success
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
@@ -230,7 +230,7 @@ export default function About() {
 
             <div className="pt-8">
               <Button size="lg" className="hover-lift" asChild>
-                <Link href="/contact">Start Your Digital Transformation</Link>
+                <Link href="/contact">Get In Touch</Link>
               </Button>
             </div>
           </div>

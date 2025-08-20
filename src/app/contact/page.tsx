@@ -98,7 +98,7 @@ export default function Contact() {
             <ScrollAnimation>
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-3xl font-bold mb-4">Send a Message</h2>
+                  <h2 className="text-4xl font-bold mb-4">Send a Message</h2>
                   <p className="text-muted-foreground text-lg">
                     Fill out the form below and I&apos;ll reach out within 24 hours to discuss your business needs.
                   </p>
@@ -207,7 +207,7 @@ export default function Contact() {
             <ScrollAnimation>
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+                  <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
                   <p className="text-muted-foreground text-lg">
                     Prefer to reach out directly? Use any of the methods below to connect with me.
                   </p>

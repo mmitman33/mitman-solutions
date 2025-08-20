@@ -64,7 +64,7 @@ export default function Home() {
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
               What We <span className="text-primary font-extrabold">Deliver</span>
             </h2>
           </ScrollAnimation>

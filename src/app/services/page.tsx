@@ -44,7 +44,7 @@ export default function Services() {
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-12">
-                          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+                          <h2 className="text-3xl sm:text-3xl lg:text-5xl font-bold text-foreground">
                 How We'll <span className="text-primary font-extrabold">Help You Win</span>
               </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -181,7 +181,7 @@ export default function Services() {
       <section className="bg-gradient-to-r from-slate-50 to-blue-50/30 py-24">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold">Strategic Technical Consulting</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold">Strategic Technical Consulting</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Beyond software development, we provide strategic guidance so you make the right technical decisions and ship products that your customers will love.
             </p>
@@ -259,7 +259,7 @@ export default function Services() {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold">Our Process</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold">Our Process</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We use proven methodologies that deliver projects on time, within budget, and exceeding expectations.
             </p>
